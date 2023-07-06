@@ -1,0 +1,53 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+
+ex:dataset-mia
+  a dcat:Dataset ;
+  dcterms:title "Moving Image Archive"@en ;
+  dcat:keyword "moving images"@en, "archive"@en, "Scotland"@en ;
+  dcterms:description "This dataset represents the descriptive metadata from the Moving Image Archive catalogue, which is Scotland’s national collection of moving images." ;
+  dcterms:publisher ex:nls ;
+  dcat:contactPoint <https://data.nls.uk/contact/> ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+  dcterms:license <https://creativecommons.org/publicdomain/mark/1.0/> ;
+  dcat:landingPage <https://data.nls.uk/data/metadata-collections/moving-image-archive/> ;
+  dcterms:isReferencedBy <https://doi.org/10.1177/01655515231174386> ;
+  dcat:distribution ex:mia-marc ;
+  dcat:distribution ex:mia-dc ;
+  dcat:distribution ex:mia-rdf;
+  owl:sameAs wd:Q50841422 
+  .
+
+ex:nls
+  a foaf:Organization ;
+  rdfs:label "National Library of Scotland"@en ;
+  rdfs:label "Biblioteca Nacional de Escocia"@es 
+  .
+
+ex:mia-marc rdf:type dcat:Distribution ;
+  dcat:downloadURL <https://nlsfoundry.s3.amazonaws.com/metadata/nls-moving-image-archive.zip> ;
+  dcat:byteSize "6300000"^^xsd:nonNegativeInteger ;
+  dcat:mediaType <http://www.iana.org/assignments/media-types/application/xml> ;
+  dcat:compressFormat <http://www.iana.org/assignments/media-types/application/zip>
+  .
+
+ex:mia-dc rdf:type dcat:Distribution ;
+  dcat:downloadURL <https://nlsfoundry.s3.amazonaws.com/metadata/nls-moving-image-archive.zip> ;
+  dcat:byteSize "6300000"^^xsd:nonNegativeInteger ;
+  dcat:mediaType <http://www.iana.org/assignments/media-types/application/xml> ;
+  dcat:compressFormat <http://www.iana.org/assignments/media-types/application/zip>
+  .
+
+ex:mia-rdf rdf:type dcat:Distribution ;
+  dcat:downloadURL <https://zenodo.org/record/8051036/files/NLSMovingImageArchiveDataset.zip?download=1> ;
+  dcterms:title "RDF/XML representation of the ontology used for the data"@en ;
+  dcat:byteSize "2900000"^^xsd:nonNegativeInteger ;
+  dcat:mediaType <http://www.iana.org/assignments/media-types/text/turtle> ;
+  dcterms:conformsTo <https://www.w3.org/TR/turtle/> ;
+  dcterms:title "RDF representation of the data"@en ;
+  dcterms:description "This dataset was created in October-December 2022 for the National Library of Scotland's Data Foundry by Gustavo Candela, National Librarian’s Research Fellowship in Digital Scholarship 2022-23."@en ;
+  dcat:compressFormat <http://www.iana.org/assignments/media-types/application/zip> ;
+  dcterms:bibliographicCitation "Candela, G. (2023). Towards a semantic approach in GLAM Labs: The case of the Data Foundry at the National Library of Scotland. Journal of Information Science, 0(0). https://doi.org/10.1177/01655515231174386"
+  .
+
