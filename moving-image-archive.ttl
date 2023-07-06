@@ -41,7 +41,8 @@
   foaf:mbox <mailto:digital.scholarship@nls.uk>;
   rdfs:label "National Library of Scotland"@en ;
   rdfs:label "Biblioteca Nacional de Escocia"@es ;
-  owl:sameAs <https://www.wikidata.org/wiki/Q1670994> 
+  owl:sameAs <https://www.wikidata.org/wiki/Q1670994> ;
+  owl:sameAs <https://viaf.org/viaf/132075128/>
   .
 
 :mia-marc rdf:type dcat:Distribution ;
