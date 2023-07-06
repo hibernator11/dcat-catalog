@@ -1,8 +1,12 @@
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix wd: <http://www.wikidata.org/entity/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix :     <http://example.com/> .
 
-ex:dataset-mia
+
+:dataset-mia
   a dcat:Dataset ;
   dcterms:title "Moving Image Archive"@en ;
   dcat:keyword "moving images"@en, "archive"@en, "Scotland"@en ;
@@ -13,33 +17,47 @@ ex:dataset-mia
   dcterms:license <https://creativecommons.org/publicdomain/mark/1.0/> ;
   dcat:landingPage <https://data.nls.uk/data/metadata-collections/moving-image-archive/> ;
   dcterms:isReferencedBy <https://doi.org/10.1177/01655515231174386> ;
-  dcat:distribution ex:mia-marc ;
-  dcat:distribution ex:mia-dc ;
-  dcat:distribution ex:mia-rdf;
-  owl:sameAs wd:Q50841422 
+  dcat:distribution :mia-marc ;
+  dcat:distribution :mia-dc ;
+  dcat:distribution :mia-rdf ;
+  owl:sameAs wd:Q50841422 ;
+  prov:wasGeneratedBy :data_foundry ;
   .
 
-ex:nls
+:data_foundry
+  rdf:type prov:Activity ;
+  dcterms:type <https://www.wikidata.org/wiki/Q115668308> ;
+  prov:startedAtTime "2020-11-01"^^xsd:date ;
+  prov:used :nls ;
+  rdfs:label "Data Foundry publication"@en ;
+  rdfs:seeAlso <https://doi.org/10.18352/lq.10371> ;
+  .
+
+:nls
   a foaf:Organization ;
+  a prov:Agent, prov:Organization ;
+  foaf:homePage <https://www.nls.uk/> ;
+  foaf:givenName "National Library of Scotland"^^xsd:string;
+  foaf:mbox <mailto:digital.scholarship@nls.uk>;
   rdfs:label "National Library of Scotland"@en ;
   rdfs:label "Biblioteca Nacional de Escocia"@es 
   .
 
-ex:mia-marc rdf:type dcat:Distribution ;
+:mia-marc rdf:type dcat:Distribution ;
   dcat:downloadURL <https://nlsfoundry.s3.amazonaws.com/metadata/nls-moving-image-archive.zip> ;
   dcat:byteSize "6300000"^^xsd:nonNegativeInteger ;
   dcat:mediaType <http://www.iana.org/assignments/media-types/application/xml> ;
   dcat:compressFormat <http://www.iana.org/assignments/media-types/application/zip>
   .
 
-ex:mia-dc rdf:type dcat:Distribution ;
+:mia-dc rdf:type dcat:Distribution ;
   dcat:downloadURL <https://nlsfoundry.s3.amazonaws.com/metadata/nls-moving-image-archive.zip> ;
   dcat:byteSize "6300000"^^xsd:nonNegativeInteger ;
   dcat:mediaType <http://www.iana.org/assignments/media-types/application/xml> ;
   dcat:compressFormat <http://www.iana.org/assignments/media-types/application/zip>
   .
 
-ex:mia-rdf rdf:type dcat:Distribution ;
+:mia-rdf rdf:type dcat:Distribution ;
   dcat:downloadURL <https://zenodo.org/record/8051036/files/NLSMovingImageArchiveDataset.zip?download=1> ;
   dcterms:title "RDF/XML representation of the ontology used for the data"@en ;
   dcat:byteSize "2900000"^^xsd:nonNegativeInteger ;
