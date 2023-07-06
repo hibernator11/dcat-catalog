@@ -17,20 +17,23 @@
   dcterms:license <https://creativecommons.org/publicdomain/mark/1.0/> ;
   dcat:landingPage <https://data.nls.uk/data/metadata-collections/moving-image-archive/> ;
   dcterms:isReferencedBy <https://doi.org/10.1177/01655515231174386> ;
-  dcat:distribution :mia-marc ;
-  dcat:distribution :mia-dc ;
-  dcat:distribution :mia-rdf ;
+  dcat:distribution :mia-dataset-marc ;
+  dcat:distribution :mia-dataset-dc ;
+  dcat:distribution :mia-dataset-rdf ;
   owl:sameAs wd:Q50841422 ;
-  prov:wasGeneratedBy :data_foundry ;
+  prov:wasGeneratedBy :data_foundry_activity 
   .
 
-:data_foundry
+:data_foundry_activity
   rdf:type prov:Activity ;
   dcterms:type <https://www.wikidata.org/wiki/Q115668308> ;
   prov:startedAtTime "2020-01-01"^^xsd:date ;
   prov:used :nls ;
   rdfs:label "Data Foundry publication"@en ;
   rdfs:seeAlso <https://doi.org/10.18352/lq.10371> ;
+  prov:generated :mia-dataset-marc ;
+  prov:generated :mia-dataset-dc ;
+  prov:wasAttributedTo :nls
   .
 
 :nls
@@ -42,24 +45,24 @@
   rdfs:label "National Library of Scotland"@en ;
   rdfs:label "Biblioteca Nacional de Escocia"@es ;
   owl:sameAs <https://www.wikidata.org/wiki/Q1670994> ;
-  owl:sameAs <https://viaf.org/viaf/132075128/>
+  owl:sameAs <https://viaf.org/viaf/132075128/> 
   .
 
-:mia-marc rdf:type dcat:Distribution ;
+:mia-dataset-marc rdf:type dcat:Distribution ;
   dcat:downloadURL <https://nlsfoundry.s3.amazonaws.com/metadata/nls-moving-image-archive.zip> ;
   dcat:byteSize "6300000"^^xsd:nonNegativeInteger ;
   dcat:mediaType <http://www.iana.org/assignments/media-types/application/xml> ;
   dcat:compressFormat <http://www.iana.org/assignments/media-types/application/zip>
   .
 
-:mia-dc rdf:type dcat:Distribution ;
+:mia-dataset-dc rdf:type dcat:Distribution ;
   dcat:downloadURL <https://nlsfoundry.s3.amazonaws.com/metadata/nls-moving-image-archive.zip> ;
   dcat:byteSize "6300000"^^xsd:nonNegativeInteger ;
   dcat:mediaType <http://www.iana.org/assignments/media-types/application/xml> ;
   dcat:compressFormat <http://www.iana.org/assignments/media-types/application/zip>
   .
 
-:mia-rdf rdf:type dcat:Distribution ;
+:mia-dataset-rdf rdf:type dcat:Distribution ;
   dcat:downloadURL <https://zenodo.org/record/8051036/files/NLSMovingImageArchiveDataset.zip?download=1> ;
   dcterms:title "RDF/XML representation of the ontology used for the data"@en ;
   dcat:byteSize "2900000"^^xsd:nonNegativeInteger ;
