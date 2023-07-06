@@ -11,7 +11,7 @@
   dcterms:title "Moving Image Archive"@en ;
   dcat:keyword "moving images"@en, "archive"@en, "Scotland"@en ;
   dcterms:description "This dataset represents the descriptive metadata from the Moving Image Archive catalogue, which is Scotland’s national collection of moving images." ;
-  dcterms:publisher ex:nls ;
+  dcterms:publisher :nls ;
   dcat:contactPoint <https://data.nls.uk/contact/> ;
   dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
   dcterms:license <https://creativecommons.org/publicdomain/mark/1.0/> ;
