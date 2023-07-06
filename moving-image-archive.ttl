@@ -27,7 +27,7 @@
 :data_foundry
   rdf:type prov:Activity ;
   dcterms:type <https://www.wikidata.org/wiki/Q115668308> ;
-  prov:startedAtTime "2020-11-01"^^xsd:date ;
+  prov:startedAtTime "2020-01-01"^^xsd:date ;
   prov:used :nls ;
   rdfs:label "Data Foundry publication"@en ;
   rdfs:seeAlso <https://doi.org/10.18352/lq.10371> ;
