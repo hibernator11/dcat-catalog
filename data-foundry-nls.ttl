@@ -10,6 +10,7 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix rdau: <http://rdaregistry.info/Elements/u/> .
 @prefix tadirah: <https://vocabs.dariah.eu/tadirah/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix : <http://example.com/> .
 
 
@@ -111,7 +112,8 @@
   dcterms:description "This dataset was created in October-December 2022 for the National Library of Scotland's Data Foundry by Gustavo Candela, National Librarian’s Research Fellowship in Digital Scholarship 2022-23."@en ;
   dcat:compressFormat <http://www.iana.org/assignments/media-types/application/zip> ;
   dcterms:bibliographicCitation "Candela, G. (2023). Towards a semantic approach in GLAM Labs: The case of the Data Foundry at the National Library of Scotland. Journal of Information Science, 0(0). https://doi.org/10.1177/01655515231174386" ;
-  rdfs:seeAlso <https://data.nls.uk/tools/jupyter-notebooks/semantic-web/>
+  rdfs:seeAlso <https://data.nls.uk/tools/jupyter-notebooks/semantic-web/> ;
+  prov:wasUsedBy ex:miaQualityActivity
   .
 
 
@@ -169,3 +171,26 @@
   dcat:compressFormat <http://www.iana.org/assignments/media-types/application/zip> ;
   rdfs:label "All the data 10.3 GB compressed (17.5 GB uncompressed)"@en 
   .
+
+# Conformance test rdf
+ex:conformant a skos:Concept ;
+  skos:prefLabel "conformant".
+
+ex:miaQualityActivity a prov:Activity ;
+  prov:generated ex:miaQualityResult ;
+  prov:qualifiedAssociation [
+    a prov:Association ;
+    # http://shex.io/webapps/shex.js/doc/shex-simple.html is the agent who ran the test.
+    prov:agent <http://shex.io/webapps/shex.js/doc/shex-simple.html>
+    # following the plan ex:qualityTest
+    prov:hadPlan ex:qualityTestPlan
+  ] .
+
+# Conformance quality result
+ex:miaQualityResult a prov:Entity ;
+  prov:wasGeneratedBy ex:miaQualityActivity;
+  dcterms:type ex:conformant .
+
+ex:qualityTestPlan a prov:Plan ;
+  # Here one can specify additional information on the test, which in the example is derived by the W3C Data on the Web Best Practices
+  prov:wasDerivedFrom <https://www.w3.org/TR/dwbp/> .
