@@ -34,7 +34,7 @@
   rdau:P60222 <https://github.com/NLS-Digital-Scholarship/nls-fellowship-2022-23>
   .
 
-:data_foundry_activity
+:mia_activity
   rdf:type prov:Activity ;
   dcterms:type tadirah:publishing ;
   prov:startedAtTime "2020-01-01"^^xsd:date ;
@@ -43,6 +43,9 @@
   rdfs:seeAlso <https://doi.org/10.18352/lq.10371> ;
   prov:generated :mia-dataset-marc ;
   prov:generated :mia-dataset-dc ;
+  prov:generated :punjab-dataset-text ;
+  prov:generated :punjab-dataset-all ;
+  prov:generated :punjab-dataset-trial ;
   prov:wasAttributedTo :nls
   .
 
@@ -104,6 +107,11 @@
   dcterms:identifier <https://doi.org/10.34812/2w0t-3f08>;
   dcterms:description "This dataset forms the first half of the Medical History of British India collection, which itself is part of the broader India Papers collection held by the Library. A Medical History of British India consists of official publications varying from short reports to multi-volume histories related to disease, public health and medical research between circa 1850 to 1950. These are historical sources for a period which witnessed the transition from a humoral to a biochemical tradition, which was based on laboratorial science and document the important breakthroughs in bacteriology, parasitology and the developments of vaccines in a colonial context." ;
   dcterms:publisher :nls ;
+  dcterms:issued "2020-01-01"^^xsd:date ;
+  dcterms:temporal [ a dcterms:PeriodOfTime ;
+    dcat:startDate "1850-01-01"^^xsd:date ; 
+    dcat:endDate   "1950-01-01"^^xsd:date ;
+  ];
   dcat:contactPoint <https://data.nls.uk/contact/> ;
   dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
   dcterms:license <https://creativecommons.org/publicdomain/mark/1.0/> ;
