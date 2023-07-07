@@ -9,6 +9,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix rdau: <http://rdaregistry.info/Elements/u/> .
+@prefix tadirah: <https://vocabs.dariah.eu/tadirah/> .
 @prefix : <http://example.com/> .
 
 
@@ -35,7 +36,7 @@
 
 :data_foundry_activity
   rdf:type prov:Activity ;
-  dcterms:type <https://www.wikidata.org/wiki/Q115668308> ;
+  dcterms:type tadirah:publishing ;
   prov:startedAtTime "2020-01-01"^^xsd:date ;
   prov:used :nls ;
   rdfs:label "Data Foundry publication"@en ;
@@ -47,7 +48,7 @@
 
 :fellowship_activity
   rdf:type prov:Activity ;
-  dcterms:type <https://www.wikidata.org/wiki/Q115668308> ;
+  dcterms:type tadirah:transformation ;
   prov:startedAtTime "2022-10-01"^^xsd:date ;
   prov:used :nls ;
   rdfs:label "National Librarian’s Research Fellowship in Digital Scholarship 2022-23 project"@en ;
