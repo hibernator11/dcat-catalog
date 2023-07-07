@@ -28,6 +28,7 @@
   dcat:distribution :mia-dataset-rdf ;
   owl:sameAs wd:Q50841422 ;
   prov:wasGeneratedBy :data_foundry_activity ;
+  prov:wasGeneratedBy :fellowship_activity ;
   wdt:P366 <https://github.com/NLS-Digital-Scholarship/nls-fellowship-2022-23> ;
   rdau:P60222 <https://github.com/NLS-Digital-Scholarship/nls-fellowship-2022-23>
   .
@@ -41,6 +42,17 @@
   rdfs:seeAlso <https://doi.org/10.18352/lq.10371> ;
   prov:generated :mia-dataset-marc ;
   prov:generated :mia-dataset-dc ;
+  prov:wasAttributedTo :nls
+  .
+
+:fellowship_activity
+  rdf:type prov:Activity ;
+  dcterms:type <https://www.wikidata.org/wiki/Q115668308> ;
+  prov:startedAtTime "2022-10-01"^^xsd:date ;
+  prov:used :nls ;
+  rdfs:label "National Librarian’s Research Fellowship in Digital Scholarship 2022-23 project"@en ;
+  rdfs:seeAlso <https://doi.org/10.1177/01655515231174386> ;
+  prov:generated :mia-dataset-rdf ;
   prov:wasAttributedTo :nls
   .
 
