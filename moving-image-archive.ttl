@@ -1,12 +1,14 @@
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix wd: <http://www.wikidata.org/entity/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdau: <http://rdaregistry.info/Elements/u/> .
 @prefix : <http://example.com/> .
 
 
@@ -25,7 +27,9 @@
   dcat:distribution :mia-dataset-dc ;
   dcat:distribution :mia-dataset-rdf ;
   owl:sameAs wd:Q50841422 ;
-  prov:wasGeneratedBy :data_foundry_activity 
+  prov:wasGeneratedBy :data_foundry_activity ;
+  wdt:P366 <https://github.com/NLS-Digital-Scholarship/nls-fellowship-2022-23> ;
+  rdau:P60222 <https://github.com/NLS-Digital-Scholarship/nls-fellowship-2022-23>
   .
 
 :data_foundry_activity
@@ -75,6 +79,6 @@
   dcterms:title "RDF representation of the data"@en ;
   dcterms:description "This dataset was created in October-December 2022 for the National Library of Scotland's Data Foundry by Gustavo Candela, National Librarian’s Research Fellowship in Digital Scholarship 2022-23."@en ;
   dcat:compressFormat <http://www.iana.org/assignments/media-types/application/zip> ;
-  dcterms:bibliographicCitation "Candela, G. (2023). Towards a semantic approach in GLAM Labs: The case of the Data Foundry at the National Library of Scotland. Journal of Information Science, 0(0). https://doi.org/10.1177/01655515231174386"
+  dcterms:bibliographicCitation "Candela, G. (2023). Towards a semantic approach in GLAM Labs: The case of the Data Foundry at the National Library of Scotland. Journal of Information Science, 0(0). https://doi.org/10.1177/01655515231174386" 
   .
 
