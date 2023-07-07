@@ -101,6 +101,7 @@
   a dcat:Dataset ;
   dcterms:title "A Medical History of British India"@en ;
   dcat:keyword "OCR"@en, "Text"@en ;
+  dcterms:identifier <https://doi.org/10.34812/2w0t-3f08>;
   dcterms:description "This dataset forms the first half of the Medical History of British India collection, which itself is part of the broader India Papers collection held by the Library. A Medical History of British India consists of official publications varying from short reports to multi-volume histories related to disease, public health and medical research between circa 1850 to 1950. These are historical sources for a period which witnessed the transition from a humoral to a biochemical tradition, which was based on laboratorial science and document the important breakthroughs in bacteriology, parasitology and the developments of vaccines in a colonial context." ;
   dcterms:publisher :nls ;
   dcat:contactPoint <https://data.nls.uk/contact/> ;
@@ -111,6 +112,7 @@
   dcat:distribution :punjab-dataset-all ;
   dcat:distribution :punjab-dataset-trial ;
   prov:wasGeneratedBy :data_foundry_activity ;
+  dcterms:bibliographicCitation "National Library of Scotland. A Medical History of British India. National Library of Scotland, 2019. https://doi.org/10.34812/2w0t-3f08"@en ;
   wdt:P366 <https://zenodo.org/record/5495619> ;
   rdau:P60222 <https://zenodo.org/record/5495619>
   .
@@ -128,7 +130,7 @@
   dcat:downloadURL <https://nlsfoundry.s3.amazonaws.com/data/nls-data-indiaPapers.zip> ;
   dcterms:description "File contents: 1 plain text readme file; 1 CSV inventory file; 117,022 ALTO XML file; 468 METS files; 120,903 image files."@en ;
   dcat:byteSize "10300000000"^^xsd:nonNegativeInteger ;
-  dcat:mediaType <http://www.iana.org/assignments/media-types/text> ;
+  dcat:mediaType <http://www.iana.org/assignments/media-types/application/xml> ;
   dcat:compressFormat <http://www.iana.org/assignments/media-types/application/zip> ;
   rdfs:label "All the data 10.3 GB compressed (17.5 GB uncompressed)"@en 
   .
@@ -137,7 +139,7 @@
   dcat:downloadURL <https://nlsfoundry.s3.amazonaws.com/trial/nls-trial-indiaPapers.zip> ;
   dcterms:description "Download a sample of the dataset for initial evaluation. File contents: 1 plain text readme file; 832 ALTO XML files; 1 METS file; 832 image files"@en ;
   dcat:byteSize "15500000"^^xsd:nonNegativeInteger ;
-  dcat:mediaType <http://www.iana.org/assignments/media-types/text> ;
+  dcat:mediaType <http://www.iana.org/assignments/media-types/application/xml> ;
   dcat:compressFormat <http://www.iana.org/assignments/media-types/application/zip> ;
   rdfs:label "All the data 10.3 GB compressed (17.5 GB uncompressed)"@en 
   .
