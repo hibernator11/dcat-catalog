@@ -31,6 +31,7 @@
   prov:wasGeneratedBy :pub_activity ;
   prov:wasGeneratedBy :fellowship_activity ;
   rdau:P60521 <https://www.nls.uk/copyright/> ;
+  wdt:P7014 <https://www.nls.uk/copyright/> ;
   wdt:P366 <https://github.com/NLS-Digital-Scholarship/nls-fellowship-2022-23> ;
   rdau:P60222 <https://github.com/NLS-Digital-Scholarship/nls-fellowship-2022-23>
   .
@@ -128,6 +129,7 @@
   ];
   dcat:contactPoint <https://data.nls.uk/contact/> ;
   rdau:P60521 <https://www.nls.uk/copyright/> ;
+  wdt:P7014 <https://www.nls.uk/copyright/> ;
   dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
   dcterms:license <https://creativecommons.org/publicdomain/mark/1.0/> ;
   dcat:landingPage <https://data.nls.uk/data/digitised-collections/a-medical-history-of-british-india/> ;
