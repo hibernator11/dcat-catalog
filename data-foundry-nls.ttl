@@ -28,13 +28,13 @@
   dcat:distribution :mia-dataset-dc ;
   dcat:distribution :mia-dataset-rdf ;
   owl:sameAs wd:Q50841422 ;
-  prov:wasGeneratedBy :data_foundry_activity ;
+  prov:wasGeneratedBy :pub_activity ;
   prov:wasGeneratedBy :fellowship_activity ;
   wdt:P366 <https://github.com/NLS-Digital-Scholarship/nls-fellowship-2022-23> ;
   rdau:P60222 <https://github.com/NLS-Digital-Scholarship/nls-fellowship-2022-23>
   .
 
-:mia_activity
+:pub_activity
   rdf:type prov:Activity ;
   dcterms:type tadirah:publishing ;
   prov:startedAtTime "2020-01-01"^^xsd:date ;
@@ -43,6 +43,19 @@
   rdfs:seeAlso <https://doi.org/10.18352/lq.10371> ;
   prov:generated :mia-dataset-marc ;
   prov:generated :mia-dataset-dc ;
+  prov:generated :punjab-dataset-text ;
+  prov:generated :punjab-dataset-all ;
+  prov:generated :punjab-dataset-trial ;
+  prov:wasAttributedTo :nls
+  .
+
+:clean_activity
+  rdf:type prov:Activity ;
+  dcterms:type tadirah:dataCleansing ;
+  prov:startedAtTime "2020-01-01"^^xsd:date ;
+  prov:used :nls ;
+  rdfs:label "Data Foundry Cleaned up OCR"@en ;
+  rdfs:seeAlso <https://doi.org/10.18352/lq.10371> ;
   prov:generated :punjab-dataset-text ;
   prov:generated :punjab-dataset-all ;
   prov:generated :punjab-dataset-trial ;
@@ -119,7 +132,8 @@
   dcat:distribution :punjab-dataset-text ;
   dcat:distribution :punjab-dataset-all ;
   dcat:distribution :punjab-dataset-trial ;
-  prov:wasGeneratedBy :data_foundry_activity ;
+  prov:wasGeneratedBy :pub_activity ;
+  prov:wasGeneratedBy :clean_activity ;
   dcterms:bibliographicCitation "National Library of Scotland. A Medical History of British India. National Library of Scotland, 2019. https://doi.org/10.34812/2w0t-3f08"@en ;
   wdt:P366 <https://data.nls.uk/tools/jupyter-notebooks/> ;
   rdau:P60222 <https://data.nls.uk/tools/jupyter-notebooks/>
