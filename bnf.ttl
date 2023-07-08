@@ -20,72 +20,44 @@
   dcat:keyword "manuscripts"@en, "archive"@en, "France"@en ;
   dcterms:description "Mandragore est la base d’indexation iconographique des enluminures de la BnF."@fr ;
   dcterms:publisher :bnf ;
-  dcat:contactPoint <https://data.nls.uk/contact/> ;
-  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
-  dcterms:license <https://creativecommons.org/publicdomain/mark/1.0/> ;
-  dcat:landingPage <https://data.nls.uk/data/metadata-collections/moving-image-archive/> ;
-  dcterms:isReferencedBy <https://doi.org/10.1177/01655515231174386> ;
+  dcat:contactPoint <mailto:manuscrits@bnf.fr> ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/fr> ;
+  dcterms:license <https://www.bnf.fr/fr/conditions-de-reutilisations-des-donnees-de-la-bnf> ;
+  dcat:landingPage <https://api.bnf.fr/fr/dumps-mandragore> ;
   dcat:distribution :dataset-nls-mia-marc ;
   dcat:distribution :dataset-nls-mia-dc ;
   dcat:distribution :dataset-nls-mia-rdf ;
-  owl:sameAs wd:Q50841422 ;
-  prov:wasGeneratedBy :nls_pub_activity ;
-  prov:wasGeneratedBy :nls_fellowship_activity ;
-  rdau:P60521 <https://www.nls.uk/copyright/> ;
-  wdt:P7014 <https://www.nls.uk/copyright/> ;
-  wdt:P366 <https://github.com/NLS-Digital-Scholarship/nls-fellowship-2022-23> ;
-  rdau:P60222 <https://github.com/NLS-Digital-Scholarship/nls-fellowship-2022-23>
+  prov:wasGeneratedBy :bnf_pub_activity ;
+  rdau:P60521 <https://api.bnf.fr/fr/cgu> ;
+  wdt:P7014 <https://api.bnf.fr/fr/cgu> ;
+  wdt:P366 <https://portail.biblissima.fr/> ;
+  rdau:P60222 <https://portail.biblissima.fr/>
   .
 
 :nls_pub_activity
   rdf:type prov:Activity ;
   dcterms:type tadirah:publishing ;
-  prov:startedAtTime "2020-01-01"^^xsd:date ;
+  prov:startedAtTime "2018-11-01"^^xsd:date ;
   prov:used :nls ;
-  rdfs:label "Data Foundry publication"@en ;
-  rdfs:seeAlso <https://doi.org/10.18352/lq.10371> ;
+  rdfs:label "Mandragore publication"@en ;
   prov:generated :dataset-nls-mia-marc ;
   prov:generated :dataset-nls-mia-dc ;
   prov:generated :punjab-dataset-text ;
   prov:generated :punjab-dataset-all ;
   prov:generated :punjab-dataset-trial ;
-  prov:wasAttributedTo :nls
-  .
-
-:clean_activity
-  rdf:type prov:Activity ;
-  dcterms:type tadirah:dataCleansing ;
-  prov:startedAtTime "2020-01-01"^^xsd:date ;
-  prov:used :nls ;
-  rdfs:label "Data Foundry Cleaned up OCR"@en ;
-  rdfs:seeAlso <https://doi.org/10.18352/lq.10371> ;
-  prov:generated :punjab-dataset-text ;
-  prov:generated :punjab-dataset-all ;
-  prov:generated :punjab-dataset-trial ;
-  prov:wasAttributedTo :nls
-  .
-
-:nls_fellowship_activity
-  rdf:type prov:Activity ;
-  dcterms:type tadirah:transformation ;
-  prov:startedAtTime "2022-10-01"^^xsd:date ;
-  prov:used :nls ;
-  rdfs:label "National Librarian’s Research Fellowship in Digital Scholarship 2022-23 project"@en ;
-  rdfs:seeAlso <https://doi.org/10.1177/01655515231174386> ;
-  prov:generated :dataset-nls-mia-rdf ;
-  prov:wasAttributedTo :nls
+  prov:wasAttributedTo :bnf
   .
 
 :nls
   a foaf:Organization ;
   a prov:Agent, prov:Organization ;
-  foaf:homePage <https://www.nls.uk/> ;
-  foaf:givenName "National Library of Scotland"^^xsd:string;
-  foaf:mbox <mailto:digital.scholarship@nls.uk>;
-  rdfs:label "National Library of Scotland"@en ;
-  rdfs:label "Biblioteca Nacional de Escocia"@es ;
-  owl:sameAs <https://www.wikidata.org/wiki/Q1670994> ;
-  owl:sameAs <https://viaf.org/viaf/132075128/> 
+  foaf:homePage <https://www.bnf.fr/> ;
+  foaf:givenName "Bibliothèque nationale de France"^^xsd:string;
+  foaf:mbox <mailto:manuscrits@bnf.fr;
+  rdfs:label "Bibliothèque nationale de France"@fr ;
+  rdfs:label "Biblioteca Nacional de Francia"@es ;
+  owl:sameAs <https://www.wikidata.org/wiki/Q193563> ;
+  owl:sameAs <https://viaf.org/viaf/137156173/> 
   .
 
 :dataset-nls-mia-marc rdf:type dcat:Distribution ;
