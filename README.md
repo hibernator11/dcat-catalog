@@ -7,7 +7,7 @@ Examples of GLAM datasets described using the [Data Catalog Vocabulary](https://
 
 ## Collection of datasets
 
-- [Rijsmuseum](rijksmuseum.ttl)
+- [Rijksmuseum](rijksmuseum.ttl)
 - [National Library of Scotland](data-foundry-nls.ttl)
 
 ## References
