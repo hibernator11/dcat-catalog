@@ -14,7 +14,7 @@
 @prefix : <http://example.com/> .
 
 
-:dataset-mia
+:dataset-nls-mia
   a dcat:Dataset ;
   dcterms:title "Moving Image Archive"@en ;
   dcat:keyword "moving images"@en, "archive"@en, "Scotland"@en ;
@@ -25,27 +25,27 @@
   dcterms:license <https://creativecommons.org/publicdomain/mark/1.0/> ;
   dcat:landingPage <https://data.nls.uk/data/metadata-collections/moving-image-archive/> ;
   dcterms:isReferencedBy <https://doi.org/10.1177/01655515231174386> ;
-  dcat:distribution :mia-dataset-marc ;
-  dcat:distribution :mia-dataset-dc ;
-  dcat:distribution :mia-dataset-rdf ;
+  dcat:distribution :dataset-nls-mia-marc ;
+  dcat:distribution :dataset-nls-mia-dc ;
+  dcat:distribution :dataset-nls-mia-rdf ;
   owl:sameAs wd:Q50841422 ;
-  prov:wasGeneratedBy :pub_activity ;
-  prov:wasGeneratedBy :fellowship_activity ;
+  prov:wasGeneratedBy :nls_pub_activity ;
+  prov:wasGeneratedBy :nls_fellowship_activity ;
   rdau:P60521 <https://www.nls.uk/copyright/> ;
   wdt:P7014 <https://www.nls.uk/copyright/> ;
   wdt:P366 <https://github.com/NLS-Digital-Scholarship/nls-fellowship-2022-23> ;
   rdau:P60222 <https://github.com/NLS-Digital-Scholarship/nls-fellowship-2022-23>
   .
 
-:pub_activity
+:nls_pub_activity
   rdf:type prov:Activity ;
   dcterms:type tadirah:publishing ;
   prov:startedAtTime "2020-01-01"^^xsd:date ;
   prov:used :nls ;
   rdfs:label "Data Foundry publication"@en ;
   rdfs:seeAlso <https://doi.org/10.18352/lq.10371> ;
-  prov:generated :mia-dataset-marc ;
-  prov:generated :mia-dataset-dc ;
+  prov:generated :dataset-nls-mia-marc ;
+  prov:generated :dataset-nls-mia-dc ;
   prov:generated :punjab-dataset-text ;
   prov:generated :punjab-dataset-all ;
   prov:generated :punjab-dataset-trial ;
@@ -65,14 +65,14 @@
   prov:wasAttributedTo :nls
   .
 
-:fellowship_activity
+:nls_fellowship_activity
   rdf:type prov:Activity ;
   dcterms:type tadirah:transformation ;
   prov:startedAtTime "2022-10-01"^^xsd:date ;
   prov:used :nls ;
   rdfs:label "National Librarian’s Research Fellowship in Digital Scholarship 2022-23 project"@en ;
   rdfs:seeAlso <https://doi.org/10.1177/01655515231174386> ;
-  prov:generated :mia-dataset-rdf ;
+  prov:generated :dataset-nls-mia-rdf ;
   prov:wasAttributedTo :nls
   .
 
@@ -88,21 +88,21 @@
   owl:sameAs <https://viaf.org/viaf/132075128/> 
   .
 
-:mia-dataset-marc rdf:type dcat:Distribution ;
+:dataset-nls-mia-marc rdf:type dcat:Distribution ;
   dcat:downloadURL <https://nlsfoundry.s3.amazonaws.com/metadata/nls-moving-image-archive.zip> ;
   dcat:byteSize "6300000"^^xsd:nonNegativeInteger ;
   dcat:mediaType <http://www.iana.org/assignments/media-types/application/xml> ;
   dcat:compressFormat <http://www.iana.org/assignments/media-types/application/zip>
   .
 
-:mia-dataset-dc rdf:type dcat:Distribution ;
+:dataset-nls-mia-dc rdf:type dcat:Distribution ;
   dcat:downloadURL <https://nlsfoundry.s3.amazonaws.com/metadata/nls-moving-image-archive.zip> ;
   dcat:byteSize "6300000"^^xsd:nonNegativeInteger ;
   dcat:mediaType <http://www.iana.org/assignments/media-types/application/xml> ;
   dcat:compressFormat <http://www.iana.org/assignments/media-types/application/zip>
   .
 
-:mia-dataset-rdf rdf:type dcat:Distribution ;
+:dataset-nls-mia-rdf rdf:type dcat:Distribution ;
   dcat:downloadURL <https://zenodo.org/record/8051036/files/NLSMovingImageArchiveDataset.zip?download=1> ;
   dcterms:title "RDF/XML representation of the ontology used for the data"@en ;
   dcat:byteSize "2900000"^^xsd:nonNegativeInteger ;
@@ -138,7 +138,7 @@
   dcat:distribution :punjab-dataset-text ;
   dcat:distribution :punjab-dataset-all ;
   dcat:distribution :punjab-dataset-trial ;
-  prov:wasGeneratedBy :pub_activity ;
+  prov:wasGeneratedBy :nls_pub_activity ;
   prov:wasGeneratedBy :clean_activity ;
   dcterms:bibliographicCitation "National Library of Scotland. A Medical History of British India. National Library of Scotland, 2019. https://doi.org/10.34812/2w0t-3f08"@en ;
   wdt:P366 <https://data.nls.uk/tools/jupyter-notebooks/> ;
