@@ -7,9 +7,9 @@ Examples of GLAM datasets described using the [Data Catalog Vocabulary](https://
 
 ## Collection of datasets
 
-- [National Library of France](bnf.ttl)
-- [National Library of Scotland](data-foundry-nls.ttl)
-- [Rijksmuseum](rijksmuseum.ttl)
+- [National Library of France - Mandragore](bnf.ttl)
+- [National Library of Scotland - Moving Image Archive - A Medical History of British India](data-foundry-nls.ttl)
+- [Rijksmuseum - Actors - Thesauri](rijksmuseum.ttl)
 
 ## References
 
