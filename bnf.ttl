@@ -1,0 +1,196 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdau: <http://rdaregistry.info/Elements/u/> .
+@prefix tadirah: <https://vocabs.dariah.eu/tadirah/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix : <http://example.com/> .
+
+
+:dataset-bnf-mandragore
+  a dcat:Dataset ;
+  dcterms:title "Mandragore"@en ;
+  dcat:keyword "manuscripts"@en, "archive"@en, "France"@en ;
+  dcterms:description "Mandragore est la base d’indexation iconographique des enluminures de la BnF."@fr ;
+  dcterms:publisher :bnf ;
+  dcat:contactPoint <https://data.nls.uk/contact/> ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+  dcterms:license <https://creativecommons.org/publicdomain/mark/1.0/> ;
+  dcat:landingPage <https://data.nls.uk/data/metadata-collections/moving-image-archive/> ;
+  dcterms:isReferencedBy <https://doi.org/10.1177/01655515231174386> ;
+  dcat:distribution :dataset-nls-mia-marc ;
+  dcat:distribution :dataset-nls-mia-dc ;
+  dcat:distribution :dataset-nls-mia-rdf ;
+  owl:sameAs wd:Q50841422 ;
+  prov:wasGeneratedBy :nls_pub_activity ;
+  prov:wasGeneratedBy :nls_fellowship_activity ;
+  rdau:P60521 <https://www.nls.uk/copyright/> ;
+  wdt:P7014 <https://www.nls.uk/copyright/> ;
+  wdt:P366 <https://github.com/NLS-Digital-Scholarship/nls-fellowship-2022-23> ;
+  rdau:P60222 <https://github.com/NLS-Digital-Scholarship/nls-fellowship-2022-23>
+  .
+
+:nls_pub_activity
+  rdf:type prov:Activity ;
+  dcterms:type tadirah:publishing ;
+  prov:startedAtTime "2020-01-01"^^xsd:date ;
+  prov:used :nls ;
+  rdfs:label "Data Foundry publication"@en ;
+  rdfs:seeAlso <https://doi.org/10.18352/lq.10371> ;
+  prov:generated :dataset-nls-mia-marc ;
+  prov:generated :dataset-nls-mia-dc ;
+  prov:generated :punjab-dataset-text ;
+  prov:generated :punjab-dataset-all ;
+  prov:generated :punjab-dataset-trial ;
+  prov:wasAttributedTo :nls
+  .
+
+:clean_activity
+  rdf:type prov:Activity ;
+  dcterms:type tadirah:dataCleansing ;
+  prov:startedAtTime "2020-01-01"^^xsd:date ;
+  prov:used :nls ;
+  rdfs:label "Data Foundry Cleaned up OCR"@en ;
+  rdfs:seeAlso <https://doi.org/10.18352/lq.10371> ;
+  prov:generated :punjab-dataset-text ;
+  prov:generated :punjab-dataset-all ;
+  prov:generated :punjab-dataset-trial ;
+  prov:wasAttributedTo :nls
+  .
+
+:nls_fellowship_activity
+  rdf:type prov:Activity ;
+  dcterms:type tadirah:transformation ;
+  prov:startedAtTime "2022-10-01"^^xsd:date ;
+  prov:used :nls ;
+  rdfs:label "National Librarian’s Research Fellowship in Digital Scholarship 2022-23 project"@en ;
+  rdfs:seeAlso <https://doi.org/10.1177/01655515231174386> ;
+  prov:generated :dataset-nls-mia-rdf ;
+  prov:wasAttributedTo :nls
+  .
+
+:nls
+  a foaf:Organization ;
+  a prov:Agent, prov:Organization ;
+  foaf:homePage <https://www.nls.uk/> ;
+  foaf:givenName "National Library of Scotland"^^xsd:string;
+  foaf:mbox <mailto:digital.scholarship@nls.uk>;
+  rdfs:label "National Library of Scotland"@en ;
+  rdfs:label "Biblioteca Nacional de Escocia"@es ;
+  owl:sameAs <https://www.wikidata.org/wiki/Q1670994> ;
+  owl:sameAs <https://viaf.org/viaf/132075128/> 
+  .
+
+:dataset-nls-mia-marc rdf:type dcat:Distribution ;
+  dcat:downloadURL <https://nlsfoundry.s3.amazonaws.com/metadata/nls-moving-image-archive.zip> ;
+  dcat:byteSize "6300000"^^xsd:nonNegativeInteger ;
+  dcat:mediaType <http://www.iana.org/assignments/media-types/application/xml> ;
+  dcat:compressFormat <http://www.iana.org/assignments/media-types/application/zip>
+  .
+
+:dataset-nls-mia-dc rdf:type dcat:Distribution ;
+  dcat:downloadURL <https://nlsfoundry.s3.amazonaws.com/metadata/nls-moving-image-archive.zip> ;
+  dcat:byteSize "6300000"^^xsd:nonNegativeInteger ;
+  dcat:mediaType <http://www.iana.org/assignments/media-types/application/xml> ;
+  dcat:compressFormat <http://www.iana.org/assignments/media-types/application/zip>
+  .
+
+:dataset-nls-mia-rdf rdf:type dcat:Distribution ;
+  dcat:downloadURL <https://zenodo.org/record/8051036/files/NLSMovingImageArchiveDataset.zip?download=1> ;
+  dcterms:title "RDF/XML representation of the ontology used for the data"@en ;
+  dcat:byteSize "2900000"^^xsd:nonNegativeInteger ;
+  dcat:mediaType <http://www.iana.org/assignments/media-types/text/turtle> ;
+  dcterms:conformsTo <https://www.w3.org/TR/turtle/> ;
+  dcterms:title "RDF representation of the data"@en ;
+  dcterms:description "This dataset was created in October-December 2022 for the National Library of Scotland's Data Foundry by Gustavo Candela, National Librarian’s Research Fellowship in Digital Scholarship 2022-23."@en ;
+  dcat:compressFormat <http://www.iana.org/assignments/media-types/application/zip> ;
+  dcterms:bibliographicCitation "Candela, G. (2023). Towards a semantic approach in GLAM Labs: The case of the Data Foundry at the National Library of Scotland. Journal of Information Science, 0(0). https://doi.org/10.1177/01655515231174386" ;
+  rdfs:seeAlso <https://data.nls.uk/tools/jupyter-notebooks/semantic-web/> ;
+  prov:wasUsedBy ex:miaQualityActivity
+  .
+
+
+:dataset-punjab
+  a dcat:Dataset ;
+  dcterms:title "A Medical History of British India"@en ;
+  dcat:keyword "OCR"@en, "Text"@en ;
+  dcterms:identifier <https://doi.org/10.34812/2w0t-3f08>;
+  dcterms:description "This dataset forms the first half of the Medical History of British India collection, which itself is part of the broader India Papers collection held by the Library. A Medical History of British India consists of official publications varying from short reports to multi-volume histories related to disease, public health and medical research between circa 1850 to 1950. These are historical sources for a period which witnessed the transition from a humoral to a biochemical tradition, which was based on laboratorial science and document the important breakthroughs in bacteriology, parasitology and the developments of vaccines in a colonial context." ;
+  dcterms:publisher :nls ;
+  dcterms:issued "2020-01-01"^^xsd:date ;
+  dcterms:temporal [ a dcterms:PeriodOfTime ;
+    dcat:startDate "1850-01-01"^^xsd:date ; 
+    dcat:endDate   "1950-01-01"^^xsd:date ;
+  ];
+  dcat:contactPoint <https://data.nls.uk/contact/> ;
+  rdau:P60521 <https://www.nls.uk/copyright/> ;
+  wdt:P7014 <https://www.nls.uk/copyright/> ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+  dcterms:license <https://creativecommons.org/publicdomain/mark/1.0/> ;
+  dcat:landingPage <https://data.nls.uk/data/digitised-collections/a-medical-history-of-british-india/> ;
+  dcat:distribution :punjab-dataset-text ;
+  dcat:distribution :punjab-dataset-all ;
+  dcat:distribution :punjab-dataset-trial ;
+  prov:wasGeneratedBy :nls_pub_activity ;
+  prov:wasGeneratedBy :clean_activity ;
+  dcterms:bibliographicCitation "National Library of Scotland. A Medical History of British India. National Library of Scotland, 2019. https://doi.org/10.34812/2w0t-3f08"@en ;
+  wdt:P366 <https://data.nls.uk/tools/jupyter-notebooks/> ;
+  rdau:P60222 <https://data.nls.uk/tools/jupyter-notebooks/>
+  .
+
+:punjab-dataset-text rdf:type dcat:Distribution ;
+  dcat:downloadURL <https://nlsfoundry.s3.amazonaws.com/text/nls-text-indiaPapers.zip> ;
+  dcterms:description "File contents: 1 plain text readme file; 1 CSV inventory file; 468 plain text files."@en ;
+  dcat:byteSize "34700000"^^xsd:nonNegativeInteger ;
+  dcat:mediaType <http://www.iana.org/assignments/media-types/text> ;
+  dcat:compressFormat <http://www.iana.org/assignments/media-types/application/zip> ;
+  rdfs:label "Just the text 34.7 MB compressed (119.48 MB uncompressed)"@en 
+  .
+
+:punjab-dataset-all rdf:type dcat:Distribution ;
+  dcat:downloadURL <https://nlsfoundry.s3.amazonaws.com/data/nls-data-indiaPapers.zip> ;
+  dcterms:description "File contents: 1 plain text readme file; 1 CSV inventory file; 117,022 ALTO XML file; 468 METS files; 120,903 image files."@en ;
+  dcat:byteSize "10300000000"^^xsd:nonNegativeInteger ;
+  dcat:mediaType <http://www.iana.org/assignments/media-types/application/xml> ;
+  dcat:compressFormat <http://www.iana.org/assignments/media-types/application/zip> ;
+  rdfs:label "All the data 10.3 GB compressed (17.5 GB uncompressed)"@en 
+  .
+
+:punjab-dataset-trial rdf:type dcat:Distribution ;
+  dcat:downloadURL <https://nlsfoundry.s3.amazonaws.com/trial/nls-trial-indiaPapers.zip> ;
+  dcterms:description "Download a sample of the dataset for initial evaluation. File contents: 1 plain text readme file; 832 ALTO XML files; 1 METS file; 832 image files"@en ;
+  dcat:byteSize "15500000"^^xsd:nonNegativeInteger ;
+  dcat:mediaType <http://www.iana.org/assignments/media-types/application/xml> ;
+  dcat:compressFormat <http://www.iana.org/assignments/media-types/application/zip> ;
+  rdfs:label "All the data 10.3 GB compressed (17.5 GB uncompressed)"@en 
+  .
+
+# Conformance test rdf
+ex:conformant a skos:Concept ;
+  skos:prefLabel "conformant".
+
+ex:miaQualityActivity a prov:Activity ;
+  prov:generated ex:miaQualityResult ;
+  prov:qualifiedAssociation [
+    a prov:Association ;
+    # http://shex.io/webapps/shex.js/doc/shex-simple.html is the agent who ran the test.
+    prov:agent <http://shex.io/webapps/shex.js/doc/shex-simple.html>
+    # following the plan ex:qualityTest
+    prov:hadPlan ex:qualityTestPlan
+  ] .
+
+# Conformance quality result
+ex:miaQualityResult a prov:Entity ;
+  prov:wasGeneratedBy ex:miaQualityActivity;
+  dcterms:type ex:conformant .
+
+ex:qualityTestPlan a prov:Plan ;
+  # Here one can specify additional information on the test, which in the example is derived by the W3C Data on the Web Best Practices
+  prov:wasDerivedFrom <https://www.w3.org/TR/dwbp/> .
