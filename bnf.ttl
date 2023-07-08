@@ -13,7 +13,6 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix : <http://example.com/> .
 
-
 :dataset-bnf-mandragore
   a dcat:Dataset ;
   dcterms:title "Mandragore"@en ;
@@ -82,6 +81,7 @@
   dcat:downloadURL <ftp://ftp.bnf.fr/api/jeux_docs_num/Mandragore/JD2018_ListeEnluminures.csv> ;
   dcat:mediaType <http://www.iana.org/assignments/media-types/text/csv> ;
   .
+
 :dataset-bnf-mandragore-index-enluminures rdf:type dcat:Distribution ;
   dcat:downloadURL <ftp://ftp.bnf.fr/api/jeux_docs_num/Mandragore/JD2018_Indexation.csv> ;
   dcat:mediaType <http://www.iana.org/assignments/media-types/text/csv> ;
@@ -94,11 +94,9 @@
   dcat:downloadURL <ftp://ftp.bnf.fr/api/jeux_docs_num/Mandragore/JD2018_DescFR.csv> ;
   dcat:mediaType <http://www.iana.org/assignments/media-types/text/csv> ;
 
-
 :dataset-bnf-mandragore-dewey rdf:type dcat:Distribution ;
   dcat:downloadURL <ftp://ftp.bnf.fr/api/jeux_docs_num/Mandragore/JD2018_DescDewey.csv> ;
   dcat:mediaType <http://www.iana.org/assignments/media-types/text/csv> ;
-
 
 :dataset-bnf-mandragore-dewey-descripteurs rdf:type dcat:Distribution ;
   dcat:downloadURL <ftp://ftp.bnf.fr/api/jeux_docs_num/Mandragore/JD2018_DescListeDewey.csv> ;
