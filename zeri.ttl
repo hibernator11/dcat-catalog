@@ -1,0 +1,8 @@
+:zeri
+  rdf:type dcat:DataService ;
+  dcterms:conformsTo <http://dcat.example.org/apidef/table/v2.2> ;
+  dcterms:type <https://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType/download> ;
+  dcat:endpointDescription <http://dcat.example.org/api/table-005/capability> ;
+  dcat:endpointURL <http://dcat.example.org/api/table-005> ;
+  dcat:servesDataset ex:dataset-003, ex:dataset-004 ;
+  .
