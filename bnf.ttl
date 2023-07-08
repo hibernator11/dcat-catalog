@@ -68,32 +68,38 @@
   owl:sameAs <https://viaf.org/viaf/137156173/> 
   .
 
-:dataset-nls-mia-marc rdf:type dcat:Distribution ;
-  dcat:downloadURL <https://nlsfoundry.s3.amazonaws.com/metadata/nls-moving-image-archive.zip> ;
-  dcat:byteSize "6300000"^^xsd:nonNegativeInteger ;
-  dcat:mediaType <http://www.iana.org/assignments/media-types/application/xml> ;
-  dcat:compressFormat <http://www.iana.org/assignments/media-types/application/zip>
+:dataset-bnf-mandragore-dictionnaire rdf:type dcat:Distribution ;
+  dcat:downloadURL <ftp://ftp.bnf.fr/api/jeux_docs_num/Mandragore/Mandragore-hackathon2018-donnees.rtf> ;
+  dcat:mediaType <http://www.iana.org/assignments/media-types/application/rtf> ;
   .
 
-:dataset-nls-mia-dc rdf:type dcat:Distribution ;
-  dcat:downloadURL <https://nlsfoundry.s3.amazonaws.com/metadata/nls-moving-image-archive.zip> ;
-  dcat:byteSize "6300000"^^xsd:nonNegativeInteger ;
-  dcat:mediaType <http://www.iana.org/assignments/media-types/application/xml> ;
-  dcat:compressFormat <http://www.iana.org/assignments/media-types/application/zip>
+:dataset-bnf-mandragore-manuscrits rdf:type dcat:Distribution ;
+  dcat:downloadURL <ftp://ftp.bnf.fr/api/jeux_docs_num/Mandragore/JD2018_ListeManuscrits.csv> ;
+  dcat:mediaType <http://www.iana.org/assignments/media-types/text/csv> ;
   .
 
-:dataset-nls-mia-rdf rdf:type dcat:Distribution ;
-  dcat:downloadURL <https://zenodo.org/record/8051036/files/NLSMovingImageArchiveDataset.zip?download=1> ;
-  dcterms:title "RDF/XML representation of the ontology used for the data"@en ;
-  dcat:byteSize "2900000"^^xsd:nonNegativeInteger ;
-  dcat:mediaType <http://www.iana.org/assignments/media-types/text/turtle> ;
-  dcterms:conformsTo <https://www.w3.org/TR/turtle/> ;
-  dcterms:title "RDF representation of the data"@en ;
-  dcterms:description "This dataset was created in October-December 2022 for the National Library of Scotland's Data Foundry by Gustavo Candela, National Librarian’s Research Fellowship in Digital Scholarship 2022-23."@en ;
-  dcat:compressFormat <http://www.iana.org/assignments/media-types/application/zip> ;
-  dcterms:bibliographicCitation "Candela, G. (2023). Towards a semantic approach in GLAM Labs: The case of the Data Foundry at the National Library of Scotland. Journal of Information Science, 0(0). https://doi.org/10.1177/01655515231174386" ;
-  rdfs:seeAlso <https://data.nls.uk/tools/jupyter-notebooks/semantic-web/> ;
-  prov:wasUsedBy ex:miaQualityActivity
+:dataset-bnf-mandragore-enluminures rdf:type dcat:Distribution ;
+  dcat:downloadURL <ftp://ftp.bnf.fr/api/jeux_docs_num/Mandragore/JD2018_ListeEnluminures.csv> ;
+  dcat:mediaType <http://www.iana.org/assignments/media-types/text/csv> ;
   .
+:dataset-bnf-mandragore-index-enluminures rdf:type dcat:Distribution ;
+  dcat:downloadURL <ftp://ftp.bnf.fr/api/jeux_docs_num/Mandragore/JD2018_Indexation.csv> ;
+  dcat:mediaType <http://www.iana.org/assignments/media-types/text/csv> ;
+
+:dataset-bnf-mandragore-descripteurs rdf:type dcat:Distribution ;
+  dcat:downloadURL <ftp://ftp.bnf.fr/api/jeux_docs_num/Mandragore/JD2018_DescListe.csv> ;
+  dcat:mediaType <http://www.iana.org/assignments/media-types/text/csv> ;
+
+:dataset-bnf-mandragore-formes rdf:type dcat:Distribution ;
+  dcat:downloadURL <ftp://ftp.bnf.fr/api/jeux_docs_num/Mandragore/JD2018_DescFR.csv> ;
+  dcat:mediaType <http://www.iana.org/assignments/media-types/text/csv> ;
 
 
+:dataset-bnf-mandragore-dewey rdf:type dcat:Distribution ;
+  dcat:downloadURL <ftp://ftp.bnf.fr/api/jeux_docs_num/Mandragore/JD2018_DescDewey.csv> ;
+  dcat:mediaType <http://www.iana.org/assignments/media-types/text/csv> ;
+
+
+:dataset-bnf-mandragore-dewey-descripteurs rdf:type dcat:Distribution ;
+  dcat:downloadURL <ftp://ftp.bnf.fr/api/jeux_docs_num/Mandragore/JD2018_DescListeDewey.csv> ;
+  dcat:mediaType <http://www.iana.org/assignments/media-types/text/csv> ;
