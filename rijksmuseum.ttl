@@ -1,0 +1,89 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdau: <http://rdaregistry.info/Elements/u/> .
+@prefix tadirah: <https://vocabs.dariah.eu/tadirah/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix : <http://example.com/> .
+
+
+:dataset-rijks-actors
+  a dcat:Dataset ;
+  dcterms:title "Actors"@en ;
+  dcat:keyword "Rijksmuseum"@en, "persons"@en, "organisations"@en ;
+  dcterms:description "The controlled vocabulary of actors is a list of persons and organisations. The data is structured according to the Europeana Data Model, Linked Data compatible and available in XML." ;
+  dcterms:publisher :rijks ;
+  dcat:contactPoint <https://www.rijksmuseum.nl/en/research/conduct-research/contact-form> ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+  dcterms:license <https://creativecommons.org/publicdomain/mark/1.0/> ;
+  dcat:landingPage <https://data.rijksmuseum.nl/controlled-vocabularies/download/> ;
+  dcterms:isReferencedBy <https://doi.org/10.3233/SW-170257> ;
+  dcat:distribution :dataset-rijks-actors-rdf ;
+  prov:wasGeneratedBy :rijks_pub_activity ;
+  rdau:P60521 <https://www.rijksmuseum.nl/en/research/conduct-research/data/policy> ;
+  wdt:P7014 <https://www.rijksmuseum.nl/en/research/conduct-research/data/policy> 
+  .
+
+:dataset-rijks-thesaurus
+ a dcat:Dataset ;
+  dcterms:title "Thesaurus"@en ;
+  dcat:keyword "Rijksmuseum"@en, "thesaurus"@en ;
+  dcterms:description "The thesaurus includes concepts, places and events. Data is structured according to the Simple Knowledge Organization System, Linked Data compatible and available in XML." ;
+  dcterms:publisher :rijks ;
+  dcat:contactPoint <https://www.rijksmuseum.nl/en/research/conduct-research/contact-form> ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+  dcterms:license <https://creativecommons.org/publicdomain/mark/1.0/> ;
+  dcat:landingPage <https://data.rijksmuseum.nl/controlled-vocabularies/download/> ;
+  dcterms:isReferencedBy <https://doi.org/10.3233/SW-170257> ;
+  dcat:distribution :dataset-rijks-thesaurus-rdf ;
+  prov:wasGeneratedBy :rijks_pub_activity ;
+  rdau:P60521 <https://www.rijksmuseum.nl/en/research/conduct-research/data/policy> ;
+  wdt:P7014 <https://www.rijksmuseum.nl/en/research/conduct-research/data/policy> 
+  .
+
+
+:rijks_pub_activity
+  rdf:type prov:Activity ;
+  dcterms:type tadirah:publishing ;
+  prov:startedAtTime "2019-11-01"^^xsd:date ;
+  prov:used :rijksmuseum ;
+  rdfs:label "Rijksmuseum publication"@en ;
+  rdfs:seeAlso <> ;
+  prov:generated :dataset-rijks-actors-rdf ;
+  prov:generated :dataset-rijks-thesaurus-rdf ;
+  prov:wasAttributedTo :rijksmuseum
+  .
+
+:rijksmuseum
+  a foaf:Organization ;
+  a prov:Agent, prov:Organization ;
+  foaf:homePage <https://data.rijksmuseum.nl/> ;
+  foaf:givenName "Rijksmuseum"^^xsd:string;
+  foaf:mbox <mailto:info@rijksmuseum.nl>;
+  rdfs:label "Rijksmuseum"@en ;
+  owl:sameAs <https://www.wikidata.org/wiki/Q190804> ;
+  owl:sameAs <https://viaf.org/viaf/159624082/> 
+  .
+
+:dataset-rijks-actors-rdf rdf:type dcat:Distribution ;
+  dcat:downloadURL <https://github.com/Rijksmuseum/rijksmuseum.github.io/releases/download/1.0.0/201911-rma-edm-actors.zip> ;
+  dcat:byteSize "4700000"^^xsd:nonNegativeInteger ;
+  dcat:mediaType <http://www.iana.org/assignments/media-types/application/rdf+xml> ;
+  dcat:compressFormat <http://www.iana.org/assignments/media-types/application/zip>
+  .
+
+:dataset-rijks-thesaurus-rdf rdf:type dcat:Distribution ;
+  dcat:downloadURL <https://github.com/Rijksmuseum/rijksmuseum.github.io/releases/download/1.0.0/201911-rma-skos-thesaurus.zip> ;
+  dcat:byteSize "154000"^^xsd:nonNegativeInteger ;
+  dcat:mediaType <http://www.iana.org/assignments/media-types/application/rdf+xml> ;
+  dcat:compressFormat <http://www.iana.org/assignments/media-types/application/zip>
+  .
+
+
