@@ -1,8 +1,45 @@
-:zeri
-  rdf:type dcat:DataService ;
-  dcterms:conformsTo <http://dcat.example.org/apidef/table/v2.2> ;
-  dcterms:type <https://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType/download> ;
-  dcat:endpointDescription <http://dcat.example.org/api/table-005/capability> ;
-  dcat:endpointURL <http://dcat.example.org/api/table-005> ;
-  dcat:servesDataset ex:dataset-003, ex:dataset-004 ;
+:dataset-zeri rdf:type dcat:Dataset ;
+    dcterms:license <http://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:conformsTo <https://www.w3.org/TR/owl2-overview/> ;
+    dcat:contactPoint <https://fondazionezeri.unibo.it/en/foundation/contacts> ;
+    dcterms:title "Zeri Phtoto Archive"@en ;
+    dcterms:description "The Federico Zeri Foundation was set up in 1999 by the University of Bologna with the aim of valorizing the life-work and profile of Federico Zeri, as well as preserving his bequest and turning it to best account: an Art Library (46,000 volumes, 37,000 auction catalogs, 60 periodicals) and a Photo Archive (290,000 photographs of monuments and artworks)."@en ;
+    dcterms:issued "2016-04-01"^^xsd:date ;
+    dcterms:title "Zeri Photo Archive" ;
+    prov:wasGeneratedBy :zeri_pub_activity ;
+    dcterms:isReferencedBy <https://doi.org/10.6092/unibo%2Famsacta%2F5157> ;
+    dcterms:bibliographicCitation "Fondazione Federico Zeri, Zeri Photo Archive, RDF Dataset. 1.0. 2016. Distributed by CRR-MM. http://w3id.org/zericatalog" ;
+    dcterms:type <http://purl.org/adms/assettype/DomainModel> ;
+    dcat:distribution [
+    rdf:type dcat:Distribution ;
+    dcterms:conformsTo <https://www.w3.org/TR/rdf-schema/> ;
+    dcterms:title "RDF representation of the data"@en ;
+    dcat:accessService [
+      rdf:type dcat:DataService ;
+      dcterms:conformsTo <https://www.w3.org/TR/sparql11-protocol/> ;
+      dcterms:title "Zeri LOD"@en ;
+      dcterms:description "Service that supports queries to obtain RDF representations of the data"@en ;
+      dcat:endpointURL <http://data.fondazionezeri.unibo.it/sparql/> ;
+      dcat:landingPage <http://data.fondazionezeri.unibo.it/> ;
+    ] ;
+
+:zeri_pub_activity
+  rdf:type prov:Activity ;
+  dcterms:type tadirah:publishing ;
+  prov:startedAtTime "2016-04-01"^^xsd:date ;
+  prov:used :zeri ;
+  rdfs:label "Zeri Photo Archive publication"@en ;
+  prov:generated :dataset-zeri ;
+  prov:wasAttributedTo :zeri
   .
+
+:zeri
+  a foaf:Organization ;
+  a prov:Agent, prov:Organization ;
+  foaf:homePage <http://data.fondazionezeri.unibo.it> ;
+  foaf:givenName "Zeri Photo Archive"^^xsd:string;
+  foaf:mbox <mailto:fondazionezeri.direzione@unibo.it> ;
+  rdfs:label "Zeri Photo Archive"@es ;
+  owl:sameAs <https://www.wikidata.org/wiki/Q108481932> 
+  .
+
