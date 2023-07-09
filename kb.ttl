@@ -28,9 +28,9 @@
   dcterms:language <http://id.loc.gov/vocabulary/iso639-1/nl> ;
   dcterms:license <https://www.bnf.fr/fr/conditions-de-reutilisations-des-donnees-de-la-bnf> ;
   dcat:landingPage <https://lab.kb.nl/dataset/dutch-novels-1800-2000> ;
-  dcterms:hasDistribution :dataset-kb-novels-metadata ;
-  dcterms:hasDistribution :dataset-kb-novels-metadata-bigrams ;
-  dcterms:hasDistribution :dataset-kb-novels-text ;
+  dcat:distribution  :dataset-kb-novels-metadata ;
+  dcat:distribution  :dataset-kb-novels-metadata-bigrams ;
+  dcat:distribution  :dataset-kb-novels-text ;
   rdfs:seeAlso <https://www.DBNL.org> ;
   dcterms:bibliographicCitation "Andreas van Cranenburgh, Sara Veldhoen, Michel De Gruijter (2022). Textual features and metadata for DBNL novels 1800-2000 [Data set]. Zenodo. https://doi.org/10.5281/zenodo.5786254." ;
   prov:wasGeneratedBy :kb_pub_activity ;
