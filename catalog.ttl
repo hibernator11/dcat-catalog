@@ -22,7 +22,7 @@
   foaf:homepage <https://github.com/hibernator11/dcat-catalog> ;
   dcterms:publisher :office ;
   dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en>  ;
-  dcat:dataset :dataset-kb-novels , :dataset-bnf-mandragore , :dataset-bnf-mandragore , dataset-nls-punjab , dataset-nls-mia , :dataset-rijks-actors , :dataset-rijks-thesaurus , :dataset-zeri , dataset-lc;
+  dcat:dataset :dataset-kb-novels , :dataset-bnf-mandragore , :dataset-bnf-mandragore , dataset-nls-punjab , dataset-nls-mia , :dataset-rijks-actors , :dataset-rijks-thesaurus , :dataset-zeri , :dataset-lc , :dataset-bnl-newspapers;
   .
 
 :office
