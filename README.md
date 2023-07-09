@@ -15,9 +15,9 @@ Examples of GLAM datasets described using the [Data Catalog Vocabulary](https://
 - [Zeri Photo Archive](datasets/zeri.ttl)
 
   
-## Exploring the collection of datasets
+## Exploring the collection of datasets using Jupyter Notebooks
 
-- 
+- [dcat-SPARQL](https://nbviewer.org/github/hibernator11/dcat-catalog/blob/main/notebooks/dcat-SPARQL.ipynb)
 
 ## References
 
