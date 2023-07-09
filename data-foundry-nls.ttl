@@ -135,9 +135,9 @@
   dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
   dcterms:license <https://creativecommons.org/publicdomain/mark/1.0/> ;
   dcat:landingPage <https://data.nls.uk/data/digitised-collections/a-medical-history-of-british-india/> ;
-  dcat:distribution :punjab-dataset-text ;
-  dcat:distribution :punjab-dataset-all ;
-  dcat:distribution :punjab-dataset-trial ;
+  dcterms:hasPart :punjab-dataset-text ;
+  dcterms:hasPart :punjab-dataset-all ;
+  dcterms:hasPart :punjab-dataset-trial ;
   prov:wasGeneratedBy :nls_pub_activity ;
   prov:wasGeneratedBy :clean_activity ;
   dcterms:bibliographicCitation "National Library of Scotland. A Medical History of British India. National Library of Scotland, 2019. https://doi.org/10.34812/2w0t-3f08"@en ;
