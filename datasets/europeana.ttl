@@ -1,0 +1,88 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdau: <http://rdaregistry.info/Elements/u/> .
+@prefix tadirah: <https://vocabs.dariah.eu/tadirah/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix : <http://example.com/> .
+
+
+:dataset-europeana-teatro
+  a dcat:Dataset ;
+  dcterms:title "Theater Posters and performance pictures"@en ;
+  dcat:keyword "Europeana"@en, "Teatro"@es, "Producciones"@es ;
+  dcterms:description "Theater Posters and performance pictures. Collection name: 2022715_Ag_ES_Hispana_elektra"@en ;
+  dcterms:publisher :europeana ;
+  dcat:contactPoint <https://pro.europeana.eu/about-us/office-employees> ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+  dcterms:license <http://rightsstatements.org/vocab/InC-EDU/1.0/> ;
+  dcat:landingPage <https://pro.europeana.eu/page/harvesting-and-downloads> ;
+  dcat:distribution :dataset-europeana-theatre-rdf ;
+  prov:wasGeneratedBy :europeana_pub_activity ;
+  rdau:P60521 <http://www.europeana.eu/portal/rights/api-terms-of-use.html> ;
+  wdt:P7014 <http://www.europeana.eu/portal/rights/api-terms-of-use.html> 
+  .
+
+:dataset-europeana-natural
+  a dcat:Dataset ;
+  dcterms:title "National Heritage Institute Bucharest"@en ;
+  dcat:keyword "Europeana"@en, "Natural History"@en ;
+  dcterms:description "National Heritage Institute Bucharest. Content from three Romanian natural history collections. Collection name: 893_UMP_Biospecimens"@en ;
+  dcterms:publisher :europeana ;
+  dcat:contactPoint <https://pro.europeana.eu/about-us/office-employees> ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+  dcterms:license <http://creativecommons.org/licenses/by-sa/4.0/ > ;
+  dcat:landingPage <https://pro.europeana.eu/page/harvesting-and-downloads> ;
+  dcat:distribution :dataset-europeana-natural-rdf ;
+  prov:wasGeneratedBy :europeana_pub_activity ;
+  rdau:P60521 <http://www.europeana.eu/portal/rights/api-terms-of-use.html> ;
+  wdt:P7014 <http://www.europeana.eu/portal/rights/api-terms-of-use.html> 
+  .
+
+:europeana_pub_activity
+  rdf:type prov:Activity ;
+  dcterms:type tadirah:publishing ;
+  prov:startedAtTime "2023-07-09"^^xsd:date ;
+  prov:used :europeana ;
+  rdfs:label "Europeana datasets publication"@en ;
+  rdfs:seeAlso <https://pro.europeana.eu/page/harvesting-and-downloads> ;
+  prov:generated :dataset-europeana-theatre-rdf ;
+  prov:generated :dataset-europeana-natural ;
+  prov:wasAttributedTo :europeana
+  .
+
+:europeana
+  a foaf:Organization ;
+  a prov:Agent, prov:Organization ;
+  foaf:homePage <https://www.europeana.eu/> ;
+  foaf:givenName "Europeana"^^xsd:string;
+  foaf:mbox <mailto:info@europeana.eu>;
+  rdfs:label "Europeana"@en ;
+  owl:sameAs <https://www.wikidata.org/wiki/Q234110> ;
+  owl:sameAs <https://viaf.org/viaf/3061147967353484200005/> 
+  .
+
+:dataset-europeana-theatre-rdf rdf:type dcat:Distribution ;
+  dcat:downloadURL <ftp://download.europeana.eu/dataset/XML/2022715.zip> ;
+  dcat:mediaType <http://www.iana.org/assignments/media-types/application/rdf+xml> ;
+  dcat:compressFormat <http://www.iana.org/assignments/media-types/application/zip>
+  .
+
+:dataset-europeana-natural rdf:type dcat:Distribution ;
+  dcat:downloadURL <ftp://download.europeana.eu/dataset/XML/893.zip> ;
+  dcat:mediaType <http://www.iana.org/assignments/media-types/application/rdf+xml> ;
+  dcat:compressFormat <http://www.iana.org/assignments/media-types/application/zip>
+  .
+
+
+
+
+
+
