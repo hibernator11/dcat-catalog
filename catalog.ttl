@@ -1,21 +1,19 @@
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 
-
-ex:catalog
+:catalog
   a dcat:Catalog ;
   dcterms:title "GLAM collections"@en ;
   dcterms:title "Colecciones GLAM"@es ;
   rdfs:label "GLAM collections"@en ;
   rdfs:label "Colecciones GLAM"@es ;
   foaf:homepage <https://github.com/hibernator11/dcat-catalog> ;
-  dcterms:publisher ex:transparency-office ;
+  dcterms:publisher :office ;
   dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en>  ;
-  dcat:dataset ex:dataset-001 , ex:dataset-002 , ex:dataset-003 ;
+  dcat:dataset ::dataset-kb-novels , ex:dataset-002 , ex:dataset-003 ;
   .
 
-
-ex:transparency-office
+:office
   a foaf:Organization ;
   rdfs:label "Example Office"@en ;
   rdfs:label "Oficina de ejemplo"@es ;
