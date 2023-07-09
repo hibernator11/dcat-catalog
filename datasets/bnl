@@ -1,0 +1,75 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdau: <http://rdaregistry.info/Elements/u/> .
+@prefix tadirah: <https://vocabs.dariah.eu/tadirah/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix : <http://example.com/> .
+
+:dataset-bnl-newspapers
+  a dcat:Dataset ;
+  dcterms:title "Historical Newspapers"@en ;
+  dcat:keyword "newspapers"@en, "archive"@en, "Luxembourg"@en ;
+  dcterms:description "The BnL has digitised over 800.000 pages of Luxembourg newspapers. From those, more than 700.000 pages have rich metadata using international XML standards such as METS and ALTO."@en ;
+  dcterms:publisher :bnl ;
+  dcat:contactPoint <mailto:opendata@bnl.etat.lu> ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/fr> ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/de> ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+  dcterms:license <https://creativecommons.org/publicdomain/mark/1.0/> ;
+  dcat:landingPage <https://data.bnl.lu/data/historical-newspapers/> ;
+  dcat:distribution :dataset-bnl-newspapers-stater ;
+  dcat:distribution :dataset-bnl-newspapers-dev ;
+  dcat:distribution :dataset-bnl-newspapers-sample ;
+  prov:wasGeneratedBy :bnl_pub_activity 
+  .
+
+:bnl_pub_activity
+  rdf:type prov:Activity ;
+  dcterms:type tadirah:publishing ;
+  prov:startedAtTime "2021-01-01"^^xsd:date ;
+  prov:used :bnl ;
+  rdfs:label "BnL Historical Newspapers publication"@en ;
+  prov:generated :dataset-bnl-newspapers-stater ;
+  prov:generated :dataset-bnl-newspapers-dev ;
+  prov:generated :dataset-bnl-newspapers-sample ;
+  prov:wasAttributedTo :bnl
+  .
+
+:bnl
+  a foaf:Organization ;
+  a prov:Agent, prov:Organization ;
+  foaf:homePage <https://bnl.public.lu> ;
+  foaf:givenName "Bibliothèque nationale de Luxembourg"^^xsd:string;
+  rdfs:label "Bibliothèque nationale de Luxembourg"@fr ;
+  owl:sameAs <https://www.wikidata.org/wiki/Q856651> ;
+  owl:sameAs <https://viaf.org/viaf/155463906/> 
+  .
+
+:dataset-bnl-newspapers-stater rdf:type dcat:Distribution ;
+  dcat:downloadURL <https://data.bnl.lu/open-data/digitization/newspapers/set04-5days.zip> ;
+  dcat:byteSize "2500000"^^xsd:nonNegativeInteger ;
+  dcat:mediaType <http://www.iana.org/assignments/media-types/application/xml> 
+  .
+
+:dataset-bnl-newspapers-dev rdf:type dcat:Distribution ;
+  dcat:downloadURL <https://data.bnl.lu/open-data/digitization/newspapers/set03-1month.zip> ;
+  dcat:byteSize "3000000000"^^xsd:nonNegativeInteger ;
+  dcat:mediaType <http://www.iana.org/assignments/media-types/application/xml> 
+  .
+
+:dataset-bnl-newspapers-sample rdf:type dcat:Distribution ;
+  dcat:downloadURL <https://data.bnl.lu/open-data/digitization/newspapers/set05-different-newspapers.zip> ;
+  dcat:byteSize "1000000000"^^xsd:nonNegativeInteger ;
+  dcat:mediaType <http://www.iana.org/assignments/media-types/application/xml> ;
+  .
+
+
+
