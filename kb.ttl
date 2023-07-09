@@ -28,8 +28,9 @@
   dcterms:language <http://id.loc.gov/vocabulary/iso639-1/nl> ;
   dcterms:license <https://www.bnf.fr/fr/conditions-de-reutilisations-des-donnees-de-la-bnf> ;
   dcat:landingPage <https://lab.kb.nl/dataset/dutch-novels-1800-2000> ;
-  dcterms:hasPart :dataset-kb-novels-metadata ;
-  dcterms:hasPart :dataset-kb-novels-text ;
+  dcterms:hasDistribution :dataset-kb-novels-metadata ;
+  dcterms:hasDistribution :dataset-kb-novels-metadata-bigrams ;
+  dcterms:hasDistribution :dataset-kb-novels-text ;
   rdfs:seeAlso <https://www.DBNL.org> ;
   dcterms:bibliographicCitation "Andreas van Cranenburgh, Sara Veldhoen, Michel De Gruijter (2022). Textual features and metadata for DBNL novels 1800-2000 [Data set]. Zenodo. https://doi.org/10.5281/zenodo.5786254." ;
   prov:wasGeneratedBy :kb_pub_activity ;
@@ -45,7 +46,7 @@
   prov:startedAtTime "2022-01-01"^^xsd:date ;
   prov:used :kb ;
   rdfs:label "Dutch Novels publication"@en ;
-  prov:generated :dataset-kb-novels-metadata ;
+  prov:generated :dataset-kb-novels-metadata-bigrams ;
   prov:generated :dataset-kb-novels-text ;
   prov:wasAttributedTo :kb
   .
@@ -86,8 +87,8 @@
   owl:sameAs <https://viaf.org/viaf/102145970121932251120/> 
   .
 
-:dataset-kb-novels-metadata rdf:type dcat:Distribution ;
-  rdfs:label ""@en ;
+:dataset-kb-novels-metadata-bigrams rdf:type dcat:Distribution ;
+  rdfs:label "Counts of the 10,000 most frequent bigrams per text"@en ;
   dcat:downloadURL <https://zenodo.org/record/5786254/files/bigrams.csv.gz?download=1> ;
   dcat:mediaType <http://www.iana.org/assignments/media-types/text/csv> ;
   dcat:byteSize "7000000"^^xsd:nonNegativeInteger ;
@@ -97,6 +98,19 @@
   dcterms:rights <https://creativecommons.org/licenses/by/4.0/legalcode> ;
   dcterms:bibliographicCitation "van Cranenburgh, Andreas, Veldhoen, Sara, & De Gruijter, Michel. (2022). Textual features and metadata for DBNL novels 1800-2000 [Data set]. Zenodo. https://doi.org/10.5281/zenodo.5786254"
   .
+
+:dataset-kb-novels-metadata rdf:type dcat:Distribution ;
+  rdfs:label "Metadata of the corpus"@en ;
+  dcat:downloadURL <https://zenodo.org/record/5786254/files/metadata.tsv?download=1> ;
+  dcat:mediaType <http://www.iana.org/assignments/media-types/text/csv> ;
+  dcat:byteSize "7000000"^^xsd:nonNegativeInteger ;
+  dcat:compressFormat <http://www.iana.org/assignments/media-types/application/zip> ;
+  rdfs:label "Metadata of the corpus"@en ;
+  rdsf:seeAlso <https://zenodo.org/record/5786254> ;
+  dcterms:rights <https://creativecommons.org/licenses/by/4.0/legalcode> ;
+  dcterms:bibliographicCitation "van Cranenburgh, Andreas, Veldhoen, Sara, & De Gruijter, Michel. (2022). Textual features and metadata for DBNL novels 1800-2000 [Data set]. Zenodo. https://doi.org/10.5281/zenodo.5786254"
+  .
+
 
 :dataset-kb-novels-text rdf:type dcat:Distribution ;
   dcat:mediaType <http://www.iana.org/assignments/media-types/text/csv> ;
