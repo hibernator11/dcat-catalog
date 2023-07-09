@@ -46,6 +46,7 @@
   prov:startedAtTime "2022-01-01"^^xsd:date ;
   prov:used :kb ;
   rdfs:label "Dutch Novels publication"@en ;
+  prov:generated :dataset-kb-novels-metadata ;
   prov:generated :dataset-kb-novels-metadata-bigrams ;
   prov:generated :dataset-kb-novels-text ;
   prov:wasAttributedTo :kb
