@@ -16,6 +16,11 @@
       dcat:startDate "1770-01-01"^^xsd:date ; 
       dcat:endDate   "1963-01-01"^^xsd:date ;
     ];
+    rdfs:seeAlso <https://guides.loc.gov/chronicling-america-topics> ;
+    rdau:P60521 <https://www.loc.gov/legal/> ;
+    wdt:P7014 <https://www.loc.gov/legal/> ;
+    wdt:P366 <https://news-navigator.labs.loc.gov/search> ;
+    rdau:P60222 <https://news-navigator.labs.loc.gov/search>
 
 :lc_pub_activity
   rdf:type prov:Activity ;
