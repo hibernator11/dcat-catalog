@@ -35,10 +35,9 @@
 :lc
   a foaf:Organization ;
   a prov:Agent, prov:Organization ;
-  foaf:homePage <> ;
+  foaf:homePage <https://www.loc.gov/> ;
   foaf:givenName "Library of Congress"^^xsd:string;
-  foaf:mbox <mailto:fondazionezeri.direzione@unibo.it> ;
-  rdfs:label "Library of Congress"@es ;
+  rdfs:label "Library of Congress"@en ;
   owl:sameAs <https://www.wikidata.org/wiki/Q131454> ;
   owl:sameAs <https://viaf.org/viaf/151962300/> 
   .
