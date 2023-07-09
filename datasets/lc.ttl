@@ -11,7 +11,7 @@
     dcterms:title "Chronicling America" ;
     prov:wasGeneratedBy :lc_pub_activity ;
     dcat:distribution :dataset-lc-batches ;
-    dcterms:issued "2019-06-01"^^xsd:date ;
+    dcterms:issued "2007-06-01"^^xsd:date ;
     dcterms:temporal [ a dcterms:PeriodOfTime ;
       dcat:startDate "1770-01-01"^^xsd:date ; 
       dcat:endDate   "1963-01-01"^^xsd:date ;
@@ -25,7 +25,7 @@
 :lc_pub_activity
   rdf:type prov:Activity ;
   dcterms:type tadirah:publishing ;
-  prov:startedAtTime "2019-06-01"^^xsd:date ;
+  prov:startedAtTime "2007-06-01"^^xsd:date ;
   prov:used :lc ;
   rdfs:label "Chronicling America publication"@en ;
   prov:generated :dataset-lc ;
