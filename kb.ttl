@@ -1,0 +1,106 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdau: <http://rdaregistry.info/Elements/u/> .
+@prefix tadirah: <https://vocabs.dariah.eu/tadirah/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix : <http://example.com/> .
+
+:dataset-kb-novels
+  a dcat:Dataset ;
+  dcterms:title "Dutch Novels 1800-2000"@en ;
+  dcat:keyword "novels"@en, "Dutch"@en ;
+  dcterms:description "This dataset contains a corpus of 1346 novels from DBNL. Included are metadata and textual features such as word counts and syntactic features. The metadata includes variables related to canonicity: public library information, secondary references, Wikipedia mentions, etc."@en ;
+  dcterms:publisher :kb ;
+  dcat:contactPoint <mailto:dh@kb.nl> ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/nl> ;
+  dcterms:license <https://www.bnf.fr/fr/conditions-de-reutilisations-des-donnees-de-la-bnf> ;
+  dcat:landingPage <https://lab.kb.nl/dataset/dutch-novels-1800-2000> ;
+  dcterms:hasPart :dataset-kb-novels-metadata ;
+  dcterms:hasPart :dataset-kb-novels-text ;
+  rdfs:seeAlso <https://www.DBNL.org> ;
+  dcterms:bibliographicCitation "Andreas van Cranenburgh, Sara Veldhoen, Michel De Gruijter (2022). Textual features and metadata for DBNL novels 1800-2000 [Data set]. Zenodo. https://doi.org/10.5281/zenodo.5786254." ;
+  prov:wasGeneratedBy :kb_pub_activity ;
+  rdau:P60521 <https://lab.kb.nl/terms-use> ;
+  wdt:P7014 <https://lab.kb.nl/terms-use> ;
+  wdt:P366 <https://lab.kb.nl/about-us/blog/machine-learning-canonicity-dutch-novels-1800-2000> ;
+  rdau:P60222 <https://lab.kb.nl/about-us/blog/machine-learning-canonicity-dutch-novels-1800-2000>
+  .
+
+:kb_pub_activity
+  rdf:type prov:Activity ;
+  dcterms:type tadirah:publishing ;
+  prov:startedAtTime "2022-01-01"^^xsd:date ;
+  prov:used :kb ;
+  rdfs:label "Dutch Novels publication"@en ;
+  prov:generated :dataset-kb-novels-metadata ;
+  prov:generated :dataset-kb-novels-text ;
+  prov:wasAttributedTo :kb
+  .
+
+:andreas
+   a prov:Agent, prov:Person ;
+   foaf:givenName      "Dr Andreas van Cranenburgh"^^xsd:string ;
+   foaf:homePage       <https://lab.kb.nl/person/dr-andreas-van-cranenburgh> ;
+   prov:actedOnBehalfOf :kb
+.
+
+:sara
+   a prov:Agent, prov:Person;
+   foaf:givenName      "Sara Veldhoen"^^xsd:string ;
+   foaf:mbox           <mailto:sara.veldhoen@kb.nl> ;
+   foaf:homePage       <https://lab.kb.nl/person/sara-veldhoen> ;
+   prov:actedOnBehalfOf :kb 
+.
+
+:michel
+   a prov:Agent, prov:Person;
+   foaf:givenName      "Michel de Gruijter"^^xsd:string ;
+   foaf:mbox           <mailto:michel.degruijter@kb.nl> ;
+   foaf:homePage       <https://lab.kb.nl/person/michel-de-gruijter> ;
+   owl:sameAs <https://orcid.org/0000-0002-8715-0129> ;
+   prov:actedOnBehalfOf :kb
+.
+
+:kb
+  a foaf:Organization ;
+  a prov:Agent, prov:Organization ;
+  foaf:homePage <https://www.kb.nl/> ;
+  foaf:givenName "National Library of the Netherlands"^^xsd:string;
+  foaf:mbox <mailto:dh@kb.nl> ;
+  rdfs:label "National Library of the Netherlands"@en ;
+  rdfs:label "Koninklijke Bibliotheek"@nl ;
+  owl:sameAs <https://www.wikidata.org/wiki/Q1526131> ;
+  owl:sameAs <https://viaf.org/viaf/102145970121932251120/> 
+  .
+
+:dataset-kb-novels-metadata rdf:type dcat:Distribution ;
+  rdfs:label ""@en ;
+  dcat:downloadURL <https://zenodo.org/record/5786254/files/bigrams.csv.gz?download=1> ;
+  dcat:mediaType <http://www.iana.org/assignments/media-types/text/csv> ;
+  dcat:byteSize "7000000"^^xsd:nonNegativeInteger ;
+  dcat:compressFormat <http://www.iana.org/assignments/media-types/application/zip> ;
+  rdfs:label "Counts of the 10,000 most frequent bigrams per text"@en ;
+  rdsf:seeAlso <https://zenodo.org/record/5786254> ;
+  dcterms:rights <https://creativecommons.org/licenses/by/4.0/legalcode> ;
+  dcterms:bibliographicCitation "van Cranenburgh, Andreas, Veldhoen, Sara, & De Gruijter, Michel. (2022). Textual features and metadata for DBNL novels 1800-2000 [Data set]. Zenodo. https://doi.org/10.5281/zenodo.5786254"
+  .
+
+:dataset-kb-novels-text rdf:type dcat:Distribution ;
+  dcat:mediaType <http://www.iana.org/assignments/media-types/text/csv> ;
+  rdfs:seeAlso <https://zenodo.org/record/5887620> ;
+  dcterms:rights :kb_restricted ;
+  dcterms:bibliographicCitation "Cranenburgh, Andreas van, Veldhoen, Sara, & Gruijter, Michel de. (2022). Dutch novels parsed as UD [Data set]. Zenodo. https://doi.org/10.5281/zenodo.5887620"
+  .
+
+:kb_restricted a skos:Concept ;
+  skos:prefLabel ":restricted access".
+  rdfs:label "You may request access to the files in this upload, provided that you fulfil the conditions below. The decision whether to grant/deny access is solely under the responsibility of the record owner."@en
+
