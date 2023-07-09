@@ -1,0 +1,48 @@
+:dataset-lc rdf:type dcat:Dataset ;
+    dcterms:license <http://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:conformsTo <https://www.w3.org/TR/owl2-overview/> ;
+    dcat:contactPoint <https://www.loc.gov/contact/> ;
+    dcterms:title "Chronicling America"@en ;
+    dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+    dcterms:license <https://creativecommons.org/publicdomain/mark/1.0/> ;
+    dcat:landingPage <https://chroniclingamerica.loc.gov> ;
+    dcterms:description "Chronicling America (ISSN 2475-2703) is a Website providing access to information about historic newspapers and select digitized newspaper pages, and is produced by the National Digital Newspaper Program (NDNP). NDNP, a partnership between the National Endowment for the Humanities (NEH) and the Library of Congress (LC), is a long-term effort to develop an Internet-based, searchable database of U.S. newspapers with descriptive information and select digitization of historic pages. Supported by NEH, this rich digital resource will be developed and permanently maintained at the Library of Congress. An NEH award program will fund the contribution of content from, eventually, all U.S. states and territories."@en ;
+    dcterms:issued "2016-04-01"^^xsd:date ;
+    dcterms:title "Chronicling America" ;
+    prov:wasGeneratedBy :lc_pub_activity ;
+    dcat:distribution :dataset-lc-batches ;
+    dcterms:issued "2019-06-01"^^xsd:date ;
+    dcterms:temporal [ a dcterms:PeriodOfTime ;
+      dcat:startDate "1770-01-01"^^xsd:date ; 
+      dcat:endDate   "1963-01-01"^^xsd:date ;
+    ];
+
+:lc_pub_activity
+  rdf:type prov:Activity ;
+  dcterms:type tadirah:publishing ;
+  prov:startedAtTime "2019-06-01"^^xsd:date ;
+  prov:used :lc ;
+  rdfs:label "Chronicling America publication"@en ;
+  prov:generated :dataset-lc ;
+  prov:wasAttributedTo :lc
+  .
+
+:lc
+  a foaf:Organization ;
+  a prov:Agent, prov:Organization ;
+  foaf:homePage <> ;
+  foaf:givenName "Library of Congress"^^xsd:string;
+  foaf:mbox <mailto:fondazionezeri.direzione@unibo.it> ;
+  rdfs:label "Library of Congress"@es ;
+  owl:sameAs <https://www.wikidata.org/wiki/Q131454> ;
+  owl:sameAs <https://viaf.org/viaf/151962300/> 
+  .
+
+:dataset-lc-batches rdf:type dcat:Distribution ;
+  dcat:downloadURL <https://chroniclingamerica.loc.gov/batches.json> ;
+  dcat:byteSize "8600"^^xsd:nonNegativeInteger ;
+  dcat:mediaType <http://www.iana.org/assignments/media-types/application/json> 
+  .
+
+
+
