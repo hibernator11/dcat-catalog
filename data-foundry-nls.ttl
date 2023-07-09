@@ -117,7 +117,7 @@
   .
 
 
-:dataset-punjab
+:dataset-nls-punjab
   a dcat:Dataset ;
   dcterms:title "A Medical History of British India"@en ;
   dcat:keyword "OCR"@en, "Text"@en ;
