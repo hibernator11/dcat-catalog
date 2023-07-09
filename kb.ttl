@@ -17,6 +17,11 @@
   a dcat:Dataset ;
   dcterms:title "Dutch Novels 1800-2000"@en ;
   dcat:keyword "novels"@en, "Dutch"@en ;
+  dcterms:issued "2022-01-01"^^xsd:date ;
+  dcterms:temporal [ a dcterms:PeriodOfTime ;
+    dcat:startDate "1800-01-01"^^xsd:date ; 
+    dcat:endDate   "2000-01-01"^^xsd:date ;
+  ];
   dcterms:description "This dataset contains a corpus of 1346 novels from DBNL. Included are metadata and textual features such as word counts and syntactic features. The metadata includes variables related to canonicity: public library information, secondary references, Wikipedia mentions, etc."@en ;
   dcterms:publisher :kb ;
   dcat:contactPoint <mailto:dh@kb.nl> ;
