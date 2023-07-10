@@ -15,7 +15,7 @@
 
 :dataset-moma
   rdf:type dcat:Dataset ;
-  dcat:keyword "Museum"@en, "images"@en, "digital collection"@en ;
+  dcat:keyword "Museum"@en, "images"@en, "collection"@en ;
   dcterms:title "The Metropolitan Museum of Art Collection API"@en ;
   dcterms:publisher :moma ;
   dcterms:issued "2016-09-01"^^xsd:date ;
