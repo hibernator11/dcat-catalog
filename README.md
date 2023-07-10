@@ -10,6 +10,7 @@ Examples of GLAM datasets described using the [Data Catalog Vocabulary](https://
 - [Europeana - Downloads](datasets/europeana.ttl)
 - [Harvard Art Museums API](datasets/harvard.ttl)
 - [Library of Congress - Chronicling America](datasets/lc.ttl)
+- [Metropolitan Museum of Art - Collection API](datasets/moma.ttl)
 - [National Library of France - Mandragore](datasets/bnf.ttl)
 - [National Library of Luxembourg - Historical Newspapers](datasets/bnl.ttl)
 - [National Library of Scotland - Moving Image Archive - A Medical History of British India](datasets/data-foundry-nls.ttl)
