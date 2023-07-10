@@ -49,7 +49,7 @@
   dcat:endpointDescription <https://metmuseum.github.io/> ;
   rdfs:label "returns a listing of all valid Object IDs available to use"@en ;
   dcat:endpointURL <https://collectionapi.metmuseum.org/public/collection/v1/objects> ;
-  dcat:servesDataset dataset-moma 
+  dcat:servesDataset :dataset-moma 
   .
 
 :dataset-moma-csv rdf:type dcat:Distribution ;
