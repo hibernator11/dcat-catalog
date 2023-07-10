@@ -59,7 +59,7 @@
   a foaf:Organization ;
   a prov:Agent, prov:Organization ;
   foaf:homePage <https://www.bnf.fr/> ;
-  foaf:givenName "Bibliothèque nationale de France"^^xsd:string;
+  foaf:givenName "Bibliothèque nationale de France"^^xsd:string ;
   foaf:mbox <mailto:manuscrits@bnf.fr> ;
   rdfs:label "Bibliothèque nationale de France"@fr ;
   rdfs:label "Biblioteca Nacional de Francia"@es ;
