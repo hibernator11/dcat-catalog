@@ -95,7 +95,7 @@
   dcat:byteSize "7000000"^^xsd:nonNegativeInteger ;
   dcat:compressFormat <http://www.iana.org/assignments/media-types/application/zip> ;
   rdfs:label "Counts of the 10,000 most frequent bigrams per text"@en ;
-  rdsf:seeAlso <https://zenodo.org/record/5786254> ;
+  rdfs:seeAlso <https://zenodo.org/record/5786254> ;
   dcterms:rights <https://creativecommons.org/licenses/by/4.0/legalcode> ;
   dcterms:bibliographicCitation "van Cranenburgh, Andreas, Veldhoen, Sara, & De Gruijter, Michel. (2022). Textual features and metadata for DBNL novels 1800-2000 [Data set]. Zenodo. https://doi.org/10.5281/zenodo.5786254"
   .
