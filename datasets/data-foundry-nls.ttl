@@ -113,7 +113,7 @@
   dcat:compressFormat <http://www.iana.org/assignments/media-types/application/zip> ;
   dcterms:bibliographicCitation "Candela, G. (2023). Towards a semantic approach in GLAM Labs: The case of the Data Foundry at the National Library of Scotland. Journal of Information Science, 0(0). https://doi.org/10.1177/01655515231174386" ;
   rdfs:seeAlso <https://data.nls.uk/tools/jupyter-notebooks/semantic-web/> ;
-  prov:wasUsedBy ex:miaQualityActivity
+  prov:wasUsedBy :miaQualityActivity
   .
 
 
@@ -173,24 +173,24 @@
   .
 
 # Conformance test rdf
-ex:conformant a skos:Concept ;
+:conformant a skos:Concept ;
   skos:prefLabel "conformant".
 
-ex:miaQualityActivity a prov:Activity ;
-  prov:generated ex:miaQualityResult ;
+:miaQualityActivity a prov:Activity ;
+  prov:generated :miaQualityResult ;
   prov:qualifiedAssociation [
     a prov:Association ;
     # http://shex.io/webapps/shex.js/doc/shex-simple.html is the agent who ran the test.
     prov:agent <http://shex.io/webapps/shex.js/doc/shex-simple.html>
-    # following the plan ex:qualityTest
-    prov:hadPlan ex:qualityTestPlan
+    # following the plan :qualityTest
+    prov:hadPlan :qualityTestPlan
   ] .
 
 # Conformance quality result
-ex:miaQualityResult a prov:Entity ;
-  prov:wasGeneratedBy ex:miaQualityActivity;
-  dcterms:type ex:conformant .
+:miaQualityResult a prov:Entity ;
+  prov:wasGeneratedBy :miaQualityActivity;
+  dcterms:type :conformant .
 
-ex:qualityTestPlan a prov:Plan ;
+:qualityTestPlan a prov:Plan ;
   # Here one can specify additional information on the test, which in the example is derived by the W3C Data on the Web Best Practices
   prov:wasDerivedFrom <https://www.w3.org/TR/dwbp/> .
