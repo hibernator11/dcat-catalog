@@ -3,6 +3,8 @@
   dcat:keyword "Museum"@en, "images"@en, "digital collection"@en ;
   dcterms:title "The Metropolitan Museum of Art Collection API"@en ;
   dcterms:publisher :moma ;
+  dcterms:issued "2016-09-01"^^xsd:date ;
+  dcterms:modified "2023-06-15"^^xsd:date ;
   dcterms:rights <http://www.metmuseum.org/about-the-met/policies-and-documents/image-resources> ;
   dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
   dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -10,8 +12,20 @@
   dcat:contactPoint <mailto:openaccess@metmuseum.org> ;
   dcterms:description "The Met’s Open Access datasets are available through our API. The API (RESTful web service in JSON format) gives access to all of The Met’s Open Access data and to corresponding high resolution images (JPEG format) that are in the public domain."@en ;
   dcat:distribution :dataset-moma-csv ;
+  prov:wasGeneratedBy :moma_pub_activity
   rdau:P60521 <https://github.com/metmuseum/openaccess> ;
   wdt:P7014 <https://github.com/metmuseum/openaccess> 
+  .
+
+:moma_pub_activity
+  rdf:type prov:Activity ;
+  dcterms:type tadirah:publishing ;
+  prov:startedAtTime "2016-09-01"^^xsd:date ;
+  prov:used :moma ;
+  rdfs:label "Moma publication"@en ;
+  prov:generated :dataset-moma-csv ;
+  prov:generated :dataset-moma-json ;
+  prov:wasAttributedTo :moma
   .
 
 :dataset-moma-json
