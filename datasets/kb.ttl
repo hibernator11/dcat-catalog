@@ -112,7 +112,6 @@
   dcterms:bibliographicCitation "van Cranenburgh, Andreas, Veldhoen, Sara, & De Gruijter, Michel. (2022). Textual features and metadata for DBNL novels 1800-2000 [Data set]. Zenodo. https://doi.org/10.5281/zenodo.5786254"
   .
 
-
 :dataset-kb-novels-text rdf:type dcat:Distribution ;
   dcat:mediaType <http://www.iana.org/assignments/media-types/text/csv> ;
   rdfs:seeAlso <https://zenodo.org/record/5887620> ;
@@ -121,6 +120,6 @@
   .
 
 :kb_restricted a skos:Concept ;
-  skos:prefLabel ":restricted access" .
+  skos:prefLabel "restricted access" ;
   rdfs:label "You may request access to the files in this upload, provided that you fulfil the conditions below. The decision whether to grant/deny access is solely under the responsibility of the record owner."@en
   .
