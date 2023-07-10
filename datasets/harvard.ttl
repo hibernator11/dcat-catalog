@@ -34,7 +34,7 @@
   dcterms:conformsTo <https://datatracker.ietf.org/doc/html/rfc8259> ;
   dcat:endpointDescription <https://github.com/harvardartmuseums/api-docs> ;
   dcat:endpointURL <https://api.harvardartmuseums.org> ;
-  dcat:servesDataset dataset-harvard 
+  dcat:servesDataset :dataset-harvard 
 .
 
 :harvard
