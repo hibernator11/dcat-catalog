@@ -9,7 +9,6 @@
   dcat:landingPage <https://metmuseum.github.io/> ;
   dcat:contactPoint <mailto:openaccess@metmuseum.org> ;
   dcterms:description "The Met’s Open Access datasets are available through our API. The API (RESTful web service in JSON format) gives access to all of The Met’s Open Access data and to corresponding high resolution images (JPEG format) that are in the public domain."@en ;
-  dcat:distribution :dataset-moma-json ;
   dcat:distribution :dataset-moma-csv ;
   rdau:P60521 <https://github.com/metmuseum/openaccess> ;
   wdt:P7014 <https://github.com/metmuseum/openaccess> 
@@ -23,6 +22,14 @@
   dcat:endpointURL <https://collectionapi.metmuseum.org/public/collection/v1/objects> ;
   dcat:servesDataset dataset-moma 
 .
+
+:dataset-moma-csv rdf:type dcat:Distribution ;
+  dcat:mediaType <http://www.iana.org/assignments/media-types/text/csv> ;
+  rdfs:seeAlso <https://github.com/metmuseum/openaccess/> ;
+  dcterms:rights <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  dcat:downloadURL <https://github.com/metmuseum/openaccess/blob/master/MetObjects.csv> ;
+  dcat:byteSize "317000000"^^xsd:nonNegativeInteger ;
+  .
 
 :moma
   a foaf:Organization ;
