@@ -1,0 +1,36 @@
+:dataset-moma
+  rdf:type dcat:Dataset ;
+  dcat:keyword "Museum"@en, "images"@en, "digital collection"@en ;
+  dcterms:title "The Metropolitan Museum of Art Collection API"@en ;
+  dcterms:publisher :moma ;
+  dcterms:rights <http://www.metmuseum.org/about-the-met/policies-and-documents/image-resources> ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  dcat:landingPage <https://metmuseum.github.io/> ;
+  dcat:contactPoint <mailto:openaccess@metmuseum.org> ;
+  dcterms:description "The Met’s Open Access datasets are available through our API. The API (RESTful web service in JSON format) gives access to all of The Met’s Open Access data and to corresponding high resolution images (JPEG format) that are in the public domain."@en ;
+  dcat:distribution :dataset-moma-json ;
+  dcat:distribution :dataset-moma-csv ;
+  rdau:P60521 <https://github.com/metmuseum/openaccess> ;
+  wdt:P7014 <https://github.com/metmuseum/openaccess> 
+  .
+
+:dataset-moma-json
+  rdf:type dcat:DataService ;
+  dcterms:conformsTo <https://datatracker.ietf.org/doc/html/rfc8259> ;
+  dcat:endpointDescription <https://metmuseum.github.io/> ;
+  rdfs:label "returns a listing of all valid Object IDs available to use"@en ;
+  dcat:endpointURL <https://collectionapi.metmuseum.org/public/collection/v1/objects> ;
+  dcat:servesDataset dataset-moma 
+.
+
+:moma
+  a foaf:Organization ;
+  a prov:Agent, prov:Organization ;
+  foaf:homePage <https://www.metmuseum.org/> ;
+  foaf:givenName "The Metropolitan Museum of Art"^^xsd:string;
+  foaf:mbox <mailto:openaccess@metmuseum.org> ;
+  rdfs:label "The Metropolitan Museum of Art"@en ;
+  owl:sameAs <https://www.wikidata.org/wiki/Q188740> ;
+  owl:sameAs <https://viaf.org/viaf/128460224/> 
+  .
