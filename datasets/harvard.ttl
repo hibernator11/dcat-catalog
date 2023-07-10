@@ -8,8 +8,8 @@
   dcat:landingPage <https://harvardartmuseums.org/collections/api> ;
   dcat:contactPoint <mailto:am_divr@harvard.edu> ;
   dcterms:description "The Harvard Art Museums API is a REST-style service designed for developers who wish to explore and integrate the museums’ collections in their projects. The API provides direct access to JSON formatted data that powers this website and many other aspects of the museums."@en ;
-  rdau:P60521 <http://www.harvardartmuseums.org/terms-of-use> ;
-  wdt:P7014 <http://www.harvardartmuseums.org/terms-of-use> ;
+  rdau:P60521 <https://github.com/harvardartmuseums/api-docs#terms-of-use> ;
+  wdt:P7014 <https://github.com/harvardartmuseums/api-docs#terms-of-use> ;
   wdt:P366 <https://api-toolkit.herokuapp.com> ;
   rdau:P60222 <https://api-toolkit.herokuapp.com>
   .
