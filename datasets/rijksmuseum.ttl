@@ -13,7 +13,6 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix : <http://example.com/> .
 
-
 :dataset-rijks-actors
   a dcat:Dataset ;
   dcterms:title "Actors"@en ;
@@ -47,7 +46,6 @@
   rdau:P60521 <https://www.rijksmuseum.nl/en/research/conduct-research/data/policy> ;
   wdt:P7014 <https://www.rijksmuseum.nl/en/research/conduct-research/data/policy> 
   .
-
 
 :rijks_pub_activity
   rdf:type prov:Activity ;
@@ -85,5 +83,3 @@
   dcat:mediaType <http://www.iana.org/assignments/media-types/application/rdf+xml> ;
   dcat:compressFormat <http://www.iana.org/assignments/media-types/application/zip>
   .
-
-
