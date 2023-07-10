@@ -98,7 +98,7 @@
   .
 
 :dataset-bnf-mandragore-dewey rdf:type dcat:Distribution ;
-  dcat:downloadURL <ftp://ftp.bnf.fr/api/jeux_docs_num/Mandragore/JD2018_DescDewey.csv> .
+  dcat:downloadURL <ftp://ftp.bnf.fr/api/jeux_docs_num/Mandragore/JD2018_DescDewey.csv> ;
   dcat:mediaType <http://www.iana.org/assignments/media-types/text/csv> 
   .
 
