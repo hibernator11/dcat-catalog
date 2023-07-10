@@ -42,4 +42,3 @@
   rdfs:label "Zeri Photo Archive"@es ;
   owl:sameAs <https://www.wikidata.org/wiki/Q108481932> 
   .
-
