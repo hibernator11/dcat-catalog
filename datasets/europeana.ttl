@@ -13,7 +13,6 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix : <http://example.com/> .
 
-
 :dataset-europeana-teatro
   a dcat:Dataset ;
   dcterms:title "Theater Posters and performance pictures"@en ;
@@ -38,7 +37,7 @@
   dcterms:publisher :europeana ;
   dcat:contactPoint <https://pro.europeana.eu/about-us/office-employees> ;
   dcterms:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
-  dcterms:license <http://creativecommons.org/licenses/by-sa/4.0/ > ;
+  dcterms:license <http://creativecommons.org/licenses/by-sa/4.0/> ;
   dcat:landingPage <https://pro.europeana.eu/page/harvesting-and-downloads> ;
   dcat:distribution :dataset-europeana-natural-rdf ;
   prov:wasGeneratedBy :europeana_pub_activity ;
@@ -63,7 +62,7 @@
   a prov:Agent, prov:Organization ;
   foaf:homePage <https://www.europeana.eu/> ;
   foaf:givenName "Europeana"^^xsd:string;
-  foaf:mbox <mailto:info@europeana.eu>;
+  foaf:mbox <mailto:info@europeana.eu> ;
   rdfs:label "Europeana"@en ;
   owl:sameAs <https://www.wikidata.org/wiki/Q234110> ;
   owl:sameAs <https://viaf.org/viaf/3061147967353484200005/> 
@@ -80,9 +79,3 @@
   dcat:mediaType <http://www.iana.org/assignments/media-types/application/rdf+xml> ;
   dcat:compressFormat <http://www.iana.org/assignments/media-types/application/zip>
   .
-
-
-
-
-
-
