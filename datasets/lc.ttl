@@ -21,6 +21,7 @@
     wdt:P7014 <https://www.loc.gov/legal/> ;
     wdt:P366 <https://news-navigator.labs.loc.gov/search> ;
     rdau:P60222 <https://news-navigator.labs.loc.gov/search>
+.
 
 :lc_pub_activity
   rdf:type prov:Activity ;
@@ -36,7 +37,7 @@
   a foaf:Organization ;
   a prov:Agent, prov:Organization ;
   foaf:homePage <https://www.loc.gov/> ;
-  foaf:givenName "Library of Congress"^^xsd:string;
+  foaf:givenName "Library of Congress"^^xsd:string ;
   rdfs:label "Library of Congress"@en ;
   owl:sameAs <https://www.wikidata.org/wiki/Q131454> ;
   owl:sameAs <https://viaf.org/viaf/151962300/> 
@@ -47,6 +48,3 @@
   dcat:byteSize "8600"^^xsd:nonNegativeInteger ;
   dcat:mediaType <http://www.iana.org/assignments/media-types/application/json> 
   .
-
-
-
