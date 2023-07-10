@@ -67,6 +67,6 @@
   foaf:givenName "The Metropolitan Museum of Art"^^xsd:string ;
   foaf:mbox <mailto:openaccess@metmuseum.org> ;
   rdfs:label "The Metropolitan Museum of Art"@en ;
-  owl:sameAs <https://www.wikidata.org/wiki/Q188740> ;
+  owl:sameAs wd:Q188740 ;
   owl:sameAs <https://viaf.org/viaf/128460224/> 
   .
