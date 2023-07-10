@@ -25,7 +25,7 @@
   dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
   dcterms:license <https://creativecommons.org/publicdomain/mark/1.0/> ;
   dcat:landingPage <https://data.bnl.lu/data/historical-newspapers/> ;
-  dcat:distribution :dataset-bnl-newspapers-stater ;
+  dcat:distribution :dataset-bnl-newspapers-starter ;
   dcat:distribution :dataset-bnl-newspapers-dev ;
   dcat:distribution :dataset-bnl-newspapers-sample ;
   prov:wasGeneratedBy :bnl_pub_activity 
@@ -37,7 +37,7 @@
   prov:startedAtTime "2021-01-01"^^xsd:date ;
   prov:used :bnl ;
   rdfs:label "BnL Historical Newspapers publication"@en ;
-  prov:generated :dataset-bnl-newspapers-stater ;
+  prov:generated :dataset-bnl-newspapers-starter ;
   prov:generated :dataset-bnl-newspapers-dev ;
   prov:generated :dataset-bnl-newspapers-sample ;
   prov:wasAttributedTo :bnl
@@ -53,7 +53,7 @@
   owl:sameAs <https://viaf.org/viaf/155463906/> 
   .
 
-:dataset-bnl-newspapers-stater rdf:type dcat:Distribution ;
+:dataset-bnl-newspapers-starter rdf:type dcat:Distribution ;
   dcat:downloadURL <https://data.bnl.lu/open-data/digitization/newspapers/set04-5days.zip> ;
   dcat:byteSize "2500000"^^xsd:nonNegativeInteger ;
   dcat:mediaType <http://www.iana.org/assignments/media-types/application/xml> 
