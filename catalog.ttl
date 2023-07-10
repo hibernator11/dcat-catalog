@@ -54,8 +54,7 @@
   void:vocabulary <http://www.w3.org/2004/02/skos/core#> ;
   void:triples 620 ; 
   void:classes 13 ;
-  void:properties 52;
-
+  void:properties 52
   .
 
 :office
