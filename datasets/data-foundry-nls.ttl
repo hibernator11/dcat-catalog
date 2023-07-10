@@ -121,7 +121,7 @@
   a dcat:Dataset ;
   dcterms:title "A Medical History of British India"@en ;
   dcat:keyword "OCR"@en, "Text"@en ;
-  dcterms:identifier <https://doi.org/10.34812/2w0t-3f08>;
+  dcterms:identifier <https://doi.org/10.34812/2w0t-3f08> ;
   dcterms:description "This dataset forms the first half of the Medical History of British India collection, which itself is part of the broader India Papers collection held by the Library. A Medical History of British India consists of official publications varying from short reports to multi-volume histories related to disease, public health and medical research between circa 1850 to 1950. These are historical sources for a period which witnessed the transition from a humoral to a biochemical tradition, which was based on laboratorial science and document the important breakthroughs in bacteriology, parasitology and the developments of vaccines in a colonial context." ;
   dcterms:publisher :nls ;
   dcterms:issued "2020-01-01"^^xsd:date ;
@@ -181,14 +181,14 @@
   prov:qualifiedAssociation [
     a prov:Association ;
     # http://shex.io/webapps/shex.js/doc/shex-simple.html is the agent who ran the test.
-    prov:agent <http://shex.io/webapps/shex.js/doc/shex-simple.html>
+    prov:agent <http://shex.io/webapps/shex.js/doc/shex-simple.html> ;
     # following the plan :qualityTest
     prov:hadPlan :qualityTestPlan
   ] .
 
 # Conformance quality result
 :miaQualityResult a prov:Entity ;
-  prov:wasGeneratedBy :miaQualityActivity;
+  prov:wasGeneratedBy :miaQualityActivity ;
   dcterms:type :conformant .
 
 :qualityTestPlan a prov:Plan ;
