@@ -57,7 +57,7 @@
   rdfs:seeAlso <https://github.com/metmuseum/openaccess/> ;
   dcterms:rights <https://creativecommons.org/publicdomain/zero/1.0/> ;
   dcat:downloadURL <https://github.com/metmuseum/openaccess/blob/master/MetObjects.csv> ;
-  dcat:byteSize "317000000"^^xsd:nonNegativeInteger ;
+  dcat:byteSize "317000000"^^xsd:nonNegativeInteger 
   .
 
 :moma
