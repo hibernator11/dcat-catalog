@@ -1,3 +1,4 @@
+@prefix void: <http://rdfs.org/ns/void#> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix wd: <http://www.wikidata.org/entity/> .
@@ -23,10 +24,46 @@
   dcterms:publisher :office ;
   dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en>  ;
   dcat:dataset :dataset-kb-novels , :dataset-bnf-mandragore , :dataset-bnf-mandragore , dataset-nls-punjab , dataset-nls-mia , :dataset-rijks-actors , :dataset-rijks-thesaurus , :dataset-zeri , :dataset-lc , :dataset-bnl-newspapers;
+  dcterms:contributor :University_Alicante;
+  dcterms:modified "2023-07-10"^^xsd:date;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcterms:subject <http://dbpedia.org/resource/Computer_science> ;
+  void:feature <http://www.w3.org/ns/formats/Turtle> ;
+  void:dataDump <https://raw.githubusercontent.com/hibernator11/dcat-catalog/main/datasets/bnf.ttl> ;
+  void:dataDump <https://raw.githubusercontent.com/hibernator11/dcat-catalog/main/datasets/bnl.ttl> ;
+  void:dataDump <https://raw.githubusercontent.com/hibernator11/dcat-catalog/main/datasets/data-foundry-nls.ttl> ;
+  void:dataDump <https://raw.githubusercontent.com/hibernator11/dcat-catalog/main/datasets/europeana.ttl> ;
+  void:dataDump <https://raw.githubusercontent.com/hibernator11/dcat-catalog/main/datasets/harvard.ttl> ;
+  void:dataDump <https://raw.githubusercontent.com/hibernator11/dcat-catalog/main/datasets/kb.ttl> ;
+  void:dataDump <https://raw.githubusercontent.com/hibernator11/dcat-catalog/main/datasets/lc.ttl> ;
+  void:dataDump <https://raw.githubusercontent.com/hibernator11/dcat-catalog/main/datasets/moma.ttl> ;
+  void:dataDump <https://raw.githubusercontent.com/hibernator11/dcat-catalog/main/datasets/rijksmuseum.ttl> ;
+  void:dataDump <https://raw.githubusercontent.com/hibernator11/dcat-catalog/main/datasets/zeri.ttl> ;
+  void:vocabulary <http://www.w3.org/ns/dcat#> ;
+  void:vocabulary <http://purl.org/dc/terms/> ;
+  void:vocabulary <http://www.wikidata.org/entity/> ;
+  void:vocabulary <http://www.wikidata.org/prop/direct/> ;
+  void:vocabulary <http://www.w3.org/2002/07/owl#> ;
+  void:vocabulary <http://www.w3.org/ns/prov#> ;
+  void:vocabulary <http://www.w3.org/1999/02/22-rdf-syntax-ns#> ;
+  void:vocabulary <http://www.w3.org/2001/XMLSchema#> ;
+  void:vocabulary <http://www.w3.org/2000/01/rdf-schema#> ;
+  void:vocabulary <http://xmlns.com/foaf/0.1/> ;
+  void:vocabulary <http://rdaregistry.info/Elements/u/> ;
+  void:vocabulary <https://vocabs.dariah.eu/tadirah/> ;
+  void:vocabulary <http://www.w3.org/2004/02/skos/core#> ;
+  void:triples 620 ; 
+  void:classes 13 ;
+  void:properties 52;
+
   .
 
 :office
   a foaf:Organization ;
-  rdfs:label "Example Office"@en ;
-  rdfs:label "Oficina de ejemplo"@es ;
+  rdfs:label "Data Space Office"@en 
   .
+
+:University_Alicante
+  a foaf:Organization ;
+  rdfs:label "University of Alicante"@en ;
+
