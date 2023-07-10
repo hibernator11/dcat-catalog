@@ -1,0 +1,35 @@
+:dataset-harvard
+  rdf:type dcat:Dataset ;
+  dcat:keyword "Museum"@en, "images"@en, "digital collection"@en ;
+  dcterms:title "Harvard Art Museums API"@en ;
+  dcterms:publisher :harvard ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+  dcterms:license <https://harvardartmuseums.org/teaching-and-research/image-licensing/image-licensing> ;
+  dcat:landingPage <https://harvardartmuseums.org/collections/api> ;
+  dcat:contactPoint <mailto:am_divr@harvard.edu> ;
+  dcterms:description "The Harvard Art Museums API is a REST-style service designed for developers who wish to explore and integrate the museums’ collections in their projects. The API provides direct access to JSON formatted data that powers this website and many other aspects of the museums."@en ;
+  dcat:distribution :dataset-harvard-json 
+  rdau:P60521 <http://www.harvardartmuseums.org/terms-of-use> ;
+  wdt:P7014 <http://www.harvardartmuseums.org/terms-of-use> ;
+  wdt:P366 <https://api-toolkit.herokuapp.com> ;
+  rdau:P60222 <https://api-toolkit.herokuapp.com>
+  .
+
+:dataset-harvard-json
+  rdf:type dcat:DataService ;
+  dcterms:conformsTo <https://datatracker.ietf.org/doc/html/rfc8259> ;
+  dcat:endpointDescription <https://github.com/harvardartmuseums/api-docs> ;
+  dcat:endpointURL <https://api.harvardartmuseums.org> ;
+  dcat:servesDataset dataset-harvard 
+.
+
+:harvard
+  a foaf:Organization ;
+  a prov:Agent, prov:Organization ;
+  foaf:homePage <https://harvardartmuseums.org/> ;
+  foaf:givenName "Harvard Art Museums"^^xsd:string;
+  foaf:mbox <mailto:am_divr@harvard.edu> ;
+  rdfs:label "Harvard Art Museums"@en ;
+  owl:sameAs <https://www.wikidata.org/wiki/Q3783572> ;
+  owl:sameAs <https://viaf.org/viaf/144524678/> 
+  .
