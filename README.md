@@ -23,6 +23,10 @@ Examples of GLAM datasets described using the [Data Catalog Vocabulary](https://
 
 - [dcat-SPARQL](https://nbviewer.org/github/hibernator11/dcat-catalog/blob/main/notebooks/dcat-SPARQL.ipynb)
 
+## Visualisations
+
+- Organisations can be retrieved using the Wikidata identifiers in order to create a map as a [visualisation example](https://w.wiki/6$VZ)
+
 ## References
 
 - Gustavo Candela, Nele Gabriëls, Sally Chambers, Thuy-An Pham, Sarah Ames, Neil Fitzgerald, Katrine Hofmann, Victor Harbo, Abigail Potter, Meghan Ferriter, Eileen Manchester, Alba Irollo, Ellen Van Keer, Mahendra Mahey, Olga Holownia, Milena Dobreva: A Checklist to Publish Collections as Data in GLAM Institutions. CoRR abs/2304.02603 (2023)
