@@ -121,6 +121,6 @@
   .
 
 :kb_restricted a skos:Concept ;
-  skos:prefLabel ":restricted access".
+  skos:prefLabel ":restricted access" .
   rdfs:label "You may request access to the files in this upload, provided that you fulfil the conditions below. The decision whether to grant/deny access is solely under the responsibility of the record owner."@en
-
+  .
