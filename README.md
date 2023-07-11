@@ -37,6 +37,14 @@ The enrichement by means of external repositories such as [Wikidata](https://www
 
 <img src="images/map-dcat.png" width="80%">
 
+## Future work
+
+These are potential ideas to improve this work:
+
+- Increase the number of datasets per institutions
+- Include additional GLAM institutions
+- Describe with additional details (data quality, provenance, etc.)
+
 ## References
 
 - Gustavo Candela, Nele Gabriëls, Sally Chambers, Thuy-An Pham, Sarah Ames, Neil Fitzgerald, Katrine Hofmann, Victor Harbo, Abigail Potter, Meghan Ferriter, Eileen Manchester, Alba Irollo, Ellen Van Keer, Mahendra Mahey, Olga Holownia, Milena Dobreva: A Checklist to Publish Collections as Data in GLAM Institutions. CoRR abs/2304.02603 (2023)
