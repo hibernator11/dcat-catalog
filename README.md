@@ -7,6 +7,7 @@ Examples of GLAM datasets described using the [Data Catalog Vocabulary](https://
 
 ## Collection of datasets
 
+- [British Library - Free dataset downloads](datasets/bl.ttl)
 - [Europeana - Downloads](datasets/europeana.ttl)
 - [Harvard Art Museums API](datasets/harvard.ttl)
 - [Library of Congress - Chronicling America](datasets/lc.ttl)
