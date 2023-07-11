@@ -106,3 +106,88 @@
   dcat:compressFormat <http://www.iana.org/assignments/media-types/application/zip> ;
   foaf:name "topics.csv"
   .
+
+:dataset-bl-shakespeare
+  a dcat:Dataset ;
+  dcterms:title "Shakespeare CSV"@en ;
+  dcat:keyword "Shakespeare"@en, "Metadata"@en ;
+  dcterms:issued "2022-10-21"^^xsd:date ;
+  dcterms:description "Shakespeare CSV (ZIP 22,610 KB) Updated April 2023. Initially released in 2016 to accompany the British Library's exhibition Shakespeare in Ten Acts - April-Sept. 2016."@en ;
+  dcterms:publisher :bl ;
+  dcat:contactPoint <mailto:metadata@bl.uk> ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+  dcterms:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+  dcat:landingPage <https://www.bl.uk/collection-metadata/downloads> ;
+  dcat:distribution  :dataset-bl-shakespeare-classification ;
+  dcat:distribution  :dataset-bl-shakespeare-names ;
+  dcat:distribution  :dataset-bl-shakespeare-records ;
+  dcat:distribution  :dataset-bl-shakespeare-titles ;
+  dcat:distribution  :dataset-bl-shakespeare-topics ;
+  rdfs:seeAlso <https://data.bl.uk/> ;
+  prov:wasGeneratedBy :bl_shakespeare_pub_activity ;
+  rdau:P60521 <https://www.bl.uk/about-us/terms-and-conditions/catalogue-datasets-in-rdf-and-csv> ;
+  wdt:P7014 <https://www.bl.uk/about-us/terms-and-conditions/catalogue-datasets-in-rdf-and-csv> ;
+  wdt:P366 <https://github.com/BL-Labs/Jupyter-notebooks-projects-using-BL-Sources> ;
+  rdau:P60222 <https://github.com/BL-Labs/Jupyter-notebooks-projects-using-BL-Sources>
+  .
+
+:bl_shakespeare_pub_activity
+  rdf:type prov:Activity ;
+  dcterms:type tadirah:publishing ;
+  prov:startedAtTime "2023-04-01"^^xsd:date ;
+  prov:used :bl ;
+  rdfs:label "Shakespeare publication"@en ;
+  prov:generated :dataset-bl-shakespeare-classification ;
+  prov:generated :dataset-bl-shakespeare-names ;
+  prov:generated :dataset-bl-shakespeare-records ;
+  prov:generated :dataset-bl-shakespeare-titles ;
+  prov:generated :dataset-bl-shakespeare-topics ;
+  prov:wasAttributedTo :bl
+  .
+
+:dataset-bl-shakespeare-classification rdf:type dcat:Distribution ;
+  rdfs:label "A list of all Dewey classification numbers associated with the resources. Includes: Dewey classification, BL record ID, Type of resource, Content type, Material type, BNB number, ISBN, Name, Dates associated with name, Type of name, Role, All names, Title, Variant titles, Series title, Number within series, Country of publication, Place of publication, Publisher, Date of publication, Edition, Physical description, BL shelfmark, Topics, Genre, Languages, Notes. Note: when a resource has multiple Dewey classification numbers, each classification appears as a separate entry within this file."@en ;
+  dcat:downloadURL <https://www.bl.uk/bibliographic/downloads/AlexanderTheGreatResearcherFormat_202209_csv.zip> ;
+  dcat:mediaType <http://www.iana.org/assignments/media-types/text/csv> ;
+  dcat:byteSize "22100000"^^xsd:nonNegativeInteger ;
+  dcat:compressFormat <http://www.iana.org/assignments/media-types/application/zip>  ;
+  foaf:name "classification.csv"
+  .
+
+:dataset-bl-shakespeare-names rdf:type dcat:Distribution ;
+  rdfs:label "A list of all names (including authors and editors, personal names and organisations) associated with the resources. Includes: Name, Dates associated with name, Type of name, Role, Other names, BL record ID, Type of resource, Content type, Material type, BNB number, Archival Resource Key, ISBN, Title, Variant titles, Series title, Number within series, Country of publication, Place of publication, Publisher, Date of creation/publication, Edition, Physical description, Dewey classification, BL shelfmark, Topics, Genre, Languages, Notes, Provenance. Note: when a resource is associated with multiple names, each name appears as a separate entry within this file."@en ;
+  dcat:downloadURL <https://www.bl.uk/bibliographic/downloads/AlexanderTheGreatResearcherFormat_202209_csv.zip> ;
+  dcat:mediaType <http://www.iana.org/assignments/media-types/text/csv> ;
+  dcat:byteSize "22100000"^^xsd:nonNegativeInteger ;
+  dcat:compressFormat <http://www.iana.org/assignments/media-types/application/zip> ;
+  foaf:name "names.csv"
+  .
+
+:dataset-bl-shakespeare-records rdf:type dcat:Distribution ;
+  rdfs:label "A list of all resources. Includes: BL record ID, Type of resource, Content type, Material type, BNB number, Archival Resource Key, ISBN, Name, Dates associated with name, Type of name, Role, All names, Title, Variant titles, Series title, Number within series, Country of publication, Place of publication, Publisher, Date of creation/publication, Edition, Physical description, Dewey classification, BL shelfmark, Topics, Genre, Languages, Notes, Provenance. Note: we have used the column heading 'Name' rather than 'Author' to reflect the fact that the names associated with a resource may be editors, artists, etc."@en ;
+  dcat:downloadURL <https://www.bl.uk/bibliographic/downloads/AlexanderTheGreatResearcherFormat_202209_csv.zip> ;
+  dcat:mediaType <http://www.iana.org/assignments/media-types/text/csv> ;
+  dcat:byteSize "22100000"^^xsd:nonNegativeInteger ;
+  dcat:compressFormat <http://www.iana.org/assignments/media-types/application/zip> ;
+  foaf:name "records.csv"
+  .
+
+:dataset-bl-shakespeare-titles rdf:type dcat:Distribution ;
+  rdfs:label "A list of all titles (such as main titles, standardised titles, and variant titles) associated with the resources. Includes: Title, Other titles, BL record ID, Type of resource, Content type, Material type, BNB number, Archival Resource Key, ISBN, Name, Dates associated with name, Type of name, Role, All names, Series title, Number within series, Country of publication, Place of publication, Publisher, Date of creation/publication, Edition, Physical description, Dewey classification, BL shelfmark, Topics, Genre, Languages, Notes, Provenance. Note: when a resource has multiple titles, each title appears as a separate entry within this file."@en ;
+  dcat:downloadURL <https://www.bl.uk/bibliographic/downloads/AlexanderTheGreatResearcherFormat_202209_csv.zip> ;
+  dcat:mediaType <http://www.iana.org/assignments/media-types/text/csv> ;
+  dcat:byteSize "22100000"^^xsd:nonNegativeInteger ;
+  dcat:compressFormat <http://www.iana.org/assignments/media-types/application/zip> ;
+  foaf:name "titles.csv"
+  .
+
+:dataset-bl-shakespeare-topics rdf:type dcat:Distribution ;
+  rdfs:label "A list of all topical/subject terms (including general terms, geographical terms, personal names, meetings/conferences and organisations) associated with the resources. Includes: Topic, Type of topic, BL record ID, Type of resource, Content type, Material type, BNB number, Archival Resource Key, ISBN, Name, Dates associated with name, Type of name, Role, All names, Title, Variant titles, Series title, Number within series, Country of publication, Place of publication, Publisher, Date of creation/publication, Edition, Physical description, Dewey classification, BL shelfmark, Genre, Languages, Notes, Provenance. Note: when a resource has multiple topical terms, each term appears as a separate entry within this file."@en ;
+  dcat:downloadURL <https://www.bl.uk/bibliographic/downloads/AlexanderTheGreatResearcherFormat_202209_csv.zip> ;
+  dcat:mediaType <http://www.iana.org/assignments/media-types/text/csv> ;
+  dcat:byteSize "22100000"^^xsd:nonNegativeInteger ;
+  dcat:compressFormat <http://www.iana.org/assignments/media-types/application/zip> ;
+  foaf:name "topics.csv"
+  .
+
+
