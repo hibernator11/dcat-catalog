@@ -1,0 +1,101 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdau: <http://rdaregistry.info/Elements/u/> .
+@prefix tadirah: <https://vocabs.dariah.eu/tadirah/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix : <http://example.com/> .
+
+:dataset-caribbean-panama
+  a dcat:Dataset ;
+  dcterms:title ""@en ;
+  dcat:keyword "newspapers"@en, "Metadata"@en ;
+  dcterms:issued "2022-04-20"^^xsd:date ;
+  dcterms:temporal [ a dcterms:PeriodOfTime ;
+    dcat:startDate "1950-01-01"^^xsd:date ; 
+    dcat:endDate   "1959-01-01"^^xsd:date ;
+  ];
+  dcterms:bibliographicReference "Panama Times, Ltd., 2022, 'Panama American', https://doi.org/10.34703/gzx1-9v95/NVVOYK, FIU Research Data Portal, V1";
+  dcterms:description "The Panama American is an English language daily newspaper (except for Saturday and Sunday) that is also known as the Weekend American. This collection includes issues from 1950-1959."@en ;
+  dcterms:publisher :caribbean ;
+  dcat:contactPoint <mailto:> ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+  dcterms:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+  dcat:landingPage <> ;
+  dcat:hasPart :dataset-caribbean-panama-1955-pdf ;
+  dcat:hasPart :dataset-caribbean-panama-1955-text ;
+  dcat:hasPart :dataset-caribbean-panama-1956-pdf ;
+  dcat:hasPart :dataset-caribbean-panama-1956-text ;
+  rdfs:seeAlso <https://collectionsasdata.github.io/part2whole/cohortone/> ;
+  prov:wasGeneratedBy :caribbean_panama_pub_activity ;
+  rdau:P60521 <https://dataverse.fiu.edu/dataset.xhtml?persistentId=doi:10.34703/gzx1-9v95/NVVOYK> ;
+  wdt:P7014 <https://dataverse.fiu.edu/dataset.xhtml?persistentId=doi:10.34703/gzx1-9v95/NVVOYK> 
+  .
+
+:caribbean_panama_pub_activity
+  rdf:type prov:Activity ;
+  dcterms:type tadirah:publishing ;
+  prov:startedAtTime "2022-04-20"^^xsd:date ;
+  prov:used :caribbean ;
+  rdfs:label "Panama American publication"@en ;
+  prov:generated :dataset-caribbean-panama-1955-pdf ;
+  prov:generated :dataset-caribbean-panama-1955-text ;
+  prov:generated :dataset-caribbean-panama-1956-pdf ;
+  prov:generated :dataset-caribbean-panama-1956-text ;
+  prov:wasAttributedTo :caribbean ;
+  prov:wasInfluencedBy :collectionsAsData
+  .
+
+:collectionsAsData a prov:Activity ;
+  foaf:homepage <https://collectionsasdata.github.io/part2whole/cohortone/> ;
+  rdfs:label "Collections as Data: Part to Whole"@en ;
+  dcterms:description "dLOC as Data is supported by Collections as Data: Part to Whole, an initiative funded by the Andrew W. Mellon Foundation"@en.
+  .
+
+:caribbean
+  a foaf:Organization ;
+  a prov:Agent, prov:Organization ;
+  foaf:homePage <https://www.bl.uk/> ;
+  foaf:givenName "Digital Library of the Caribbean"^^xsd:string;
+  rdfs:label "Digital Library of the Caribbean"@en ;
+  owl:sameAs wd:Q5275909
+  .
+
+:dataset-caribbean-panama-1955-pdf rdf:type dcat:Distribution ;
+  rdfs:label "digitized 1955 issues of the Panama American in PDF format"@en ;
+  dcat:downloadURL <https://dataverse.fiu.edu/file.xhtml?persistentId=doi:10.34703/gzx1-9v95/NVVOYK/5X2V9N&version=1.0> ;
+  dcat:mediaType <http://www.iana.org/assignments/media-types/application/pdf> ;
+  dcat:byteSize "20937965568"^^xsd:nonNegativeInteger ;
+  dcat:compressFormat <http://www.iana.org/assignments/media-types/application/zip>  
+  .
+
+:dataset-caribbean-panama-1955-text rdf:type dcat:Distribution ;
+  rdfs:label "extracted text of 1955 issues of the Panama American"@en ;
+  dcat:downloadURL <https://dataverse.fiu.edu/dataset.xhtml?persistentId=doi:10.34703/gzx1-9v95/NVVOYK#> ;
+  dcat:mediaType <http://www.iana.org/assignments/media-types/text> ;
+  dcat:byteSize "26500000"^^xsd:nonNegativeInteger ;
+  dcat:compressFormat <http://www.iana.org/assignments/media-types/application/zip>  
+  .
+
+:dataset-caribbean-panama-1956-pdf rdf:type dcat:Distribution ;
+  rdfs:label "digitized 1956 issues of the Panama American in PDF format"@en ;
+  dcat:downloadURL <https://dataverse.fiu.edu/file.xhtml?persistentId=doi:10.34703/gzx1-9v95/NVVOYK/Q6ZVIN&version=1.0> ;
+  dcat:mediaType <http://www.iana.org/assignments/media-types/application/pdf> ;
+  dcat:byteSize "17300000000"^^xsd:nonNegativeInteger ;
+  dcat:compressFormat <http://www.iana.org/assignments/media-types/application/zip>  
+  .
+
+:dataset-caribbean-panama-1956-text rdf:type dcat:Distribution ;
+  rdfs:label "extracted text of 1956 issues of the Panama American"@en ;
+  dcat:downloadURL <https://dataverse.fiu.edu/file.xhtml?persistentId=doi:10.34703/gzx1-9v95/NVVOYK/J6FVYE&version=1.0> ;
+  dcat:mediaType <http://www.iana.org/assignments/media-types/text> ;
+  dcat:byteSize "25900000"^^xsd:nonNegativeInteger ;
+  dcat:compressFormat <http://www.iana.org/assignments/media-types/application/zip>  
+  .
