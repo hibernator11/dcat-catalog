@@ -27,7 +27,7 @@ Examples of GLAM datasets described using the [Data Catalog Vocabulary](https://
 
 ## Visualisations
 
-- The organisations used in this work can be retrieved using their Wikidata identifiers in order to create a map as a [visualisation example](https://w.wiki/6$oN).
+- The organisations used in this work can be retrieved using their Wikidata identifiers in order to create a map as a [visualisation example](https://w.wiki/6$oU).
 
 <img src="images/map-dcat.png" width="80%">
 
