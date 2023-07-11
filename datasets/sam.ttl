@@ -1,0 +1,63 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdau: <http://rdaregistry.info/Elements/u/> .
+@prefix tadirah: <https://vocabs.dariah.eu/tadirah/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix : <http://example.com/> .
+
+
+:dataset-sam-minerals
+  a dcat:Dataset ;
+  dcterms:title "South Australian Museum Minerals Collection"@en ;
+  dcat:keyword "environment"@en, "mineralogy"@en, "nature"@en, "science"@en ;
+  dcterms:issued "2022-10-21"^^xsd:date ;
+  dcterms:description "This collection includes approximately 33000 registered mineral specimens representing the range of minerals found in South Australia. More than 1500 species are represented, providing good coverage of the species and localities from across South Australia."@en ;
+  dcterms:publisher :sam ;
+  dcat:contactPoint <mailto:> ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+  dcterms:license <http://creativecommons.org/licenses/by-nc/4.0> ;
+  dcat:landingPage <https://data.sa.gov.au/data/dataset/fe72a51c-def3-4229-b58c-cf9fef5d30ba> ;
+  dcat:distribution :dataset-sam-minerals-csv ;
+  rdfs:seeAlso <https://data.sa.gov.au> ;
+  rdfs:seeAlso <https://collab.sa.gov.au/dataset/> ;
+  prov:wasGeneratedBy :sam-minerals_pub_activity ;
+  rdau:P60521 <https://www.samuseum.sa.gov.au/cultural-sensitivity-warning> ;
+  wdt:P7014 <https://www.samuseum.sa.gov.au/cultural-sensitivity-warning> ;
+  .
+
+:sam-minerals_pub_activity
+  rdf:type prov:Activity ;
+  dcterms:type tadirah:publishing ;
+  prov:startedAtTime "2013-05-25"^^xsd:date ;
+  prov:used :sam ;
+  rdfs:label "Mineral collection publication"@en ;
+  prov:generated :dataset-sam-minerals-csv ;
+  prov:wasAttributedTo :sam
+  .
+
+:sam
+  a foaf:Organization ;
+  a prov:Agent, prov:Organization ;
+  foaf:homePage <https://www.samuseum.sa.gov.au/> ;
+  foaf:givenName "South Australian Museum"^^xsd:string;
+  foaf:mbox <mailto:feedback@samuseum.sa.gov.au> ;
+  rdfs:label "South Australian Museum"@en ;
+  owl:sameAs wd:Q2546445 ;
+  owl:sameAs <https://viaf.org/viaf/130902959/> 
+  .
+
+:dataset-sam-minerals-csv rdf:type dcat:Distribution ;
+  rdfs:label "South Australian Museum Minerals Collection"@en ;
+  dcat:downloadURL <https://data.sa.gov.au/data/dataset/fe72a51c-def3-4229-b58c-cf9fef5d30ba/resource/40db1542-2685-48a9-8a2f-00bfc508a913/download/mineralogy.csv> ;
+  dcat:mediaType <http://www.iana.org/assignments/media-types/text/csv> ;
+  dcat:byteSize "2000000"^^xsd:nonNegativeInteger ;
+  .
+
