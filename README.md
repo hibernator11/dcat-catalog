@@ -31,8 +31,6 @@ Examples of GLAM datasets described using the [Data Catalog Vocabulary](https://
 
 <img src="images/map-dcat.png" width="80%">
 
-<iframe style="width: 80vw; height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#%23defaultView%3AMap%0APREFIX%20wd%3A%20%3Chttp%3A%2F%2Fwww.wikidata.org%2Fentity%2F%3E%0ASELECT%20%3Fr%20%3FrLabel%20%28SAMPLE%28%3Fimage%29%20as%20%3Fimg%29%20%28SAMPLE%28%3Flocation%29%20as%20%3Fl%29%0AWHERE%20%7B%20%20%20%0A%20%20VALUES%20%3Fr%20%7Bwd%3AQ1670994%20wd%3AQ3783572%20wd%3AQ234110%20wd%3AQ856651%20wd%3AQ188740%20wd%3AQ1526131%20wd%3AQ190804%20wd%3AQ131454%20wd%3AQ193563%20wd%3AQ23687322%20wd%3AQ23308%20wd%3AQ2546445%7D.%0A%20%20%20%20%20%20%20OPTIONAL%20%7B%3Fr%20wdt%3AP625%20%3Flocation.%7D%20%23%20coordinates%0A%20%20%20%20%20%20%20OPTIONAL%20%7B%3Fr%20wdt%3AP159%20%3Fheadquarters%20.%20%3Fheadquarters%20wdt%3AP625%20%3Flocation.%7D%20%23%20headquarters%0A%20%20%20%20%20%20%20OPTIONAL%20%7B%3Fr%20wdt%3AP18%20%3Fimage%7D.%0A%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22en%22%20%7D%0A%7D%20GROUP%20BY%20%3Fr%20%3FrLabel%20%3Fimg" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
-
 ## References
 
 - Gustavo Candela, Nele Gabriëls, Sally Chambers, Thuy-An Pham, Sarah Ames, Neil Fitzgerald, Katrine Hofmann, Victor Harbo, Abigail Potter, Meghan Ferriter, Eileen Manchester, Alba Irollo, Ellen Van Keer, Mahendra Mahey, Olga Holownia, Milena Dobreva: A Checklist to Publish Collections as Data in GLAM Institutions. CoRR abs/2304.02603 (2023)
