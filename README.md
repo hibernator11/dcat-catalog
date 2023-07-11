@@ -7,7 +7,9 @@ Examples of GLAM datasets provided by institutions described using the [Data Cat
 
 ## Collection of datasets
 
-This is the list of examples provided by GLAM institutions that haven been transformed into the [Data Catalog Vocabulary](https://www.w3.org/TR/vocab-dcat-3/). The information to describe the datasets has been retrieved from websites, research articles and projects. In some cases, the DCAT model has been used only too some extent due to the lack of information provided by the institutions regarding the datasets.
+This is the list of examples provided by GLAM institutions that haven been transformed into the [Data Catalog Vocabulary](https://www.w3.org/TR/vocab-dcat-3/). The information to describe the datasets has been retrieved from websites, research articles and projects. In some cases, the DCAT model has been used only too some extent due to the lack of information provided by the institutions regarding the datasets. 
+
+This list intends to be a representative sample providing a wide diversity of collections with different content, license and origins in order to encourage institutions to adopt semantic and interoperable standards to describe their datasets for the new digital context.
 
 - [British Library - Free dataset downloads](datasets/bl.ttl)
 - [Digital Library of the Caribbean - Panama American](datasets/caribbean.ttl)
