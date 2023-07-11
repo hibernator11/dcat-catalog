@@ -26,7 +26,6 @@
   dcterms:publisher :kb ;
   dcat:contactPoint <mailto:dh@kb.nl> ;
   dcterms:language <http://id.loc.gov/vocabulary/iso639-1/nl> ;
-  dcterms:license <https://www.bnf.fr/fr/conditions-de-reutilisations-des-donnees-de-la-bnf> ;
   dcat:landingPage <https://lab.kb.nl/dataset/dutch-novels-1800-2000> ;
   dcat:distribution  :dataset-kb-novels-metadata ;
   dcat:distribution  :dataset-kb-novels-metadata-bigrams ;
