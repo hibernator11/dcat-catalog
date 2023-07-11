@@ -1,0 +1,108 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdau: <http://rdaregistry.info/Elements/u/> .
+@prefix tadirah: <https://vocabs.dariah.eu/tadirah/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix : <http://example.com/> .
+
+:dataset-bl-alexander
+  a dcat:Dataset ;
+  dcterms:title "Alexander the Great CSV"@en ;
+  dcat:keyword "Alexander the Great"@en, "Metadata"@en ;
+  dcterms:issued "2022-10-21"^^xsd:date ;
+  dcterms:description "Alexander the Great CSV (ZIP 1,609 KB). Released to accompany the British Library's exhibition Alexander the Great: The Making of a Myth - 21st Oct. 2022-19 Feb. 2023."@en ;
+  dcterms:publisher :bl ;
+  dcat:contactPoint <mailto:metadata@bl.uk> ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+  dcterms:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+  dcat:landingPage <https://www.bl.uk/collection-metadata/downloads> ;
+  dcat:distribution  :dataset-bl-alexander-classification ;
+  dcat:distribution  :dataset-bl-alexander-names ;
+  dcat:distribution  :dataset-bl-alexander-records ;
+  dcat:distribution  :dataset-bl-alexander-titles ;
+  dcat:distribution  :dataset-bl-alexander-topics ;
+  rdfs:seeAlso <https://data.bl.uk/> ;
+  prov:wasGeneratedBy :bl_alexander_pub_activity ;
+  rdau:P60521 <https://www.bl.uk/about-us/terms-and-conditions/catalogue-datasets-in-rdf-and-csv> ;
+  wdt:P7014 <https://www.bl.uk/about-us/terms-and-conditions/catalogue-datasets-in-rdf-and-csv> ;
+  wdt:P366 <https://github.com/BL-Labs/Jupyter-notebooks-projects-using-BL-Sources> ;
+  rdau:P60222 <https://github.com/BL-Labs/Jupyter-notebooks-projects-using-BL-Sources>
+  .
+
+:bl_alexander_pub_activity
+  rdf:type prov:Activity ;
+  dcterms:type tadirah:publishing ;
+  prov:startedAtTime "2022-10-21"^^xsd:date ;
+  prov:used :bl ;
+  rdfs:label "Alexander the Great publication"@en ;
+  prov:generated :dataset-bl-alexander-classification ;
+  prov:generated :dataset-bl-alexander-names ;
+  prov:generated :dataset-bl-alexander-records ;
+  prov:generated :dataset-bl-alexander-titles ;
+  prov:generated :dataset-bl-alexander-topics ;
+  prov:wasAttributedTo :bl
+  .
+
+:bl
+  a foaf:Organization ;
+  a prov:Agent, prov:Organization ;
+  foaf:homePage <https://www.bl.uk/> ;
+  foaf:givenName "British Library"^^xsd:string;
+  foaf:mbox <mailto:metadata@bl.uk> ;
+  rdfs:label "British Library"@en ;
+  owl:sameAs wd:Q23308 ;
+  owl:sameAs <https://viaf.org/viaf/121814978/> 
+  .
+
+:dataset-bl-alexander-classification rdf:type dcat:Distribution ;
+  rdfs:label "A list of all Dewey classification numbers associated with the resources. Includes: Dewey classification, BL record ID, Type of resource, Content type, Material type, BNB number, ISBN, Name, Dates associated with name, Type of name, Role, All names, Title, Variant titles, Series title, Number within series, Country of publication, Place of publication, Publisher, Date of publication, Edition, Physical description, BL shelfmark, Topics, Genre, Languages, Notes. Note: when a resource has multiple Dewey classification numbers, each classification appears as a separate entry within this file."@en ;
+  dcat:downloadURL <https://www.bl.uk/bibliographic/downloads/AlexanderTheGreatResearcherFormat_202209_csv.zip> ;
+  dcat:mediaType <http://www.iana.org/assignments/media-types/text/csv> ;
+  dcat:byteSize "1609000"^^xsd:nonNegativeInteger ;
+  dcat:compressFormat <http://www.iana.org/assignments/media-types/application/zip>  ;
+  foaf:name "classification.csv"
+  .
+
+:dataset-bl-alexander-names rdf:type dcat:Distribution ;
+  rdfs:label "A list of all names (including authors and editors, personal names and organisations) associated with the resources. Includes: Name, Dates associated with name, Type of name, Role, Other names, BL record ID, Type of resource, Content type, Material type, BNB number, ISBN, Title, Variant titles, Series title, Number within series, Country of publication, Place of publication, Publisher, Date of publication, Edition, Physical description, Dewey classification, BL shelfmark, Topics, Genre, Languages, Notes. Note: when a resource is associated with multiple names, each name appears as a separate entry within this file."@en ;
+  dcat:downloadURL <https://www.bl.uk/bibliographic/downloads/AlexanderTheGreatResearcherFormat_202209_csv.zip> ;
+  dcat:mediaType <http://www.iana.org/assignments/media-types/text/csv> ;
+  dcat:byteSize "1609000"^^xsd:nonNegativeInteger ;
+  dcat:compressFormat <http://www.iana.org/assignments/media-types/application/zip> ;
+  foaf:name "names.csv"
+  .
+
+:dataset-bl-alexander-records rdf:type dcat:Distribution ;
+  rdfs:label "A list of all resources. Includes: BL record ID, Type of resource, Content type, Material type, BNB number, ISBN, Name, Dates associated with name, Type of name, Role, All names, Title, Variant titles, Series title, Number within series, Country of publication, Place of publication, Publisher, Date of publication, Edition, Physical description, Dewey classification, BL shelfmark, Topics, Genre, Languages, Notes. Note: we have used the column heading 'Name' rather than 'Author' to reflect the fact that the names associated with a resource may be editors, artists, etc."@en ;
+  dcat:downloadURL <https://www.bl.uk/bibliographic/downloads/AlexanderTheGreatResearcherFormat_202209_csv.zip> ;
+  dcat:mediaType <http://www.iana.org/assignments/media-types/text/csv> ;
+  dcat:byteSize "1609000"^^xsd:nonNegativeInteger ;
+  dcat:compressFormat <http://www.iana.org/assignments/media-types/application/zip> ;
+  foaf:name "records.csv"
+  .
+
+:dataset-bl-alexander-titles rdf:type dcat:Distribution ;
+  rdfs:label "A list of all titles (such as main titles, standardised titles, and variant titles) associated with the resources. Includes: Title, Other titles, BL record ID, Type of resource, Content type, Material type, BNB number, ISBN, Name, Dates associated with name, Type of name, Role, All names, Series title, Number within series, Country of publication, Place of publication, Publisher, Date of publication, Edition, Physical description, Dewey classification, BL shelfmark, Topics, Genre, Languages, Notes. Note: when a resource has multiple titles, each title appears as a separate entry within this file."@en ;
+  dcat:downloadURL <https://www.bl.uk/bibliographic/downloads/AlexanderTheGreatResearcherFormat_202209_csv.zip> ;
+  dcat:mediaType <http://www.iana.org/assignments/media-types/text/csv> ;
+  dcat:byteSize "1609000"^^xsd:nonNegativeInteger ;
+  dcat:compressFormat <http://www.iana.org/assignments/media-types/application/zip> ;
+  foaf:name "titles.csv"
+  .
+
+:dataset-bl-alexander-topics rdf:type dcat:Distribution ;
+  rdfs:label "A list of all topical/subject terms (including general terms, geographical terms, personal names, meetings/conferences and organisations) associated with the resources. Includes: Topic, Type of topic, BL record ID, Type of resource, Content type, Material type, BNB number, ISBN, Name, Dates associated with name, Type of name, Role, All names, Title, Variant titles, Series title, Number within series, Country of publication, Place of publication, Publisher, Date of publication, Edition, Physical description, Dewey classification, BL shelfmark, Genre, Languages, Notes. Note: when a resource has multiple topical terms, each term appears as a separate entry within this file."@en ;
+  dcat:downloadURL <https://www.bl.uk/bibliographic/downloads/AlexanderTheGreatResearcherFormat_202209_csv.zip> ;
+  dcat:mediaType <http://www.iana.org/assignments/media-types/text/csv> ;
+  dcat:byteSize "1609000"^^xsd:nonNegativeInteger ;
+  dcat:compressFormat <http://www.iana.org/assignments/media-types/application/zip> ;
+  foaf:name "topics.csv"
+  .
