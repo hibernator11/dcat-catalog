@@ -7,6 +7,8 @@ Examples of GLAM datasets described using the [Data Catalog Vocabulary](https://
 
 ## Collection of datasets
 
+This is the list of examples provided by GLAM institutions that haven been transformed into the [Data Catalog Vocabulary](https://www.w3.org/TR/vocab-dcat-3/). The information to describe the datasets has been retrieved from websites, research articles and projects. In some cases, the DCAT model has been used only too some extent due to the lack of information provided by the institutions regarding the datasets.
+
 - [British Library - Free dataset downloads](datasets/bl.ttl)
 - [Digital Library of the Caribbean - Panama American](datasets/caribbean.ttl)
 - [Europeana - Downloads](datasets/europeana.ttl)
@@ -21,6 +23,7 @@ Examples of GLAM datasets described using the [Data Catalog Vocabulary](https://
 - [South Australian Museum - Minerals Collection](datasets/sam.ttl)
 - [Zeri Photo Archive](datasets/zeri.ttl)
 
+Note that only a small portion of datasets per institution has been selected. 
   
 ## Exploring the collection of datasets using Jupyter Notebooks
 
@@ -28,7 +31,7 @@ Examples of GLAM datasets described using the [Data Catalog Vocabulary](https://
 
 ## Visualisations
 
-- The organisations used in this work can be retrieved using their Wikidata identifiers in order to create a map as a [visualisation example](https://w.wiki/6$oU).
+- The organisations used in this work can be retrieved using their [Wikidata](https://www.wikidata.org) identifiers in order to create a map as a [visualisation example](https://w.wiki/6$oU).
 
 <img src="images/map-dcat.png" width="80%">
 
