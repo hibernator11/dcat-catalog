@@ -17,6 +17,7 @@ Examples of GLAM datasets described using the [Data Catalog Vocabulary](https://
 - [National Library of Scotland - Moving Image Archive - A Medical History of British India](datasets/data-foundry-nls.ttl)
 - [National Library of the Netherlands - Dutch Novels 1800-2000](datasets/kb.ttl)
 - [Rijksmuseum - Actors - Thesauri](datasets/rijksmuseum.ttl)
+- [South Australian Museum - Minerals Collection](datasets/sam.ttl)
 - [Zeri Photo Archive](datasets/zeri.ttl)
 
   
@@ -26,7 +27,7 @@ Examples of GLAM datasets described using the [Data Catalog Vocabulary](https://
 
 ## Visualisations
 
-- The organisations used in this work can be retrieved using their Wikidata identifiers in order to create a map as a [visualisation example](https://w.wiki/6$nA).
+- The organisations used in this work can be retrieved using their Wikidata identifiers in order to create a map as a [visualisation example](https://w.wiki/6$oN).
 
 <img src="images/map-dcat.png" width="80%">
 
