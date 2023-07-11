@@ -23,12 +23,15 @@
   foaf:homepage <https://github.com/hibernator11/dcat-catalog> ;
   dcterms:publisher :office ;
   dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en>  ;
-  dcat:dataset :dataset-kb-novels , :dataset-bnf-mandragore , :dataset-bnf-mandragore , dataset-nls-punjab , dataset-nls-mia , :dataset-rijks-actors , :dataset-rijks-thesaurus , :dataset-zeri , :dataset-lc , :dataset-bnl-newspapers;
+  dcat:dataset :dataset-kb-novels , :dataset-bnf-mandragore , 
+    :dataset-bnf-mandragore , dataset-nls-punjab , dataset-nls-mia , :dataset-rijks-actors , 
+    :dataset-rijks-thesaurus , :dataset-zeri , :dataset-lc , :dataset-bnl-newspapers, :dataset-bl-alexander;
   dcterms:contributor :University_Alicante;
   dcterms:modified "2023-07-10"^^xsd:date;
   dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
   dcterms:subject <http://dbpedia.org/resource/Computer_science> ;
   void:feature <http://www.w3.org/ns/formats/Turtle> ;
+  void:dataDump <https://raw.githubusercontent.com/hibernator11/dcat-catalog/main/datasets/bl.ttl> ;
   void:dataDump <https://raw.githubusercontent.com/hibernator11/dcat-catalog/main/datasets/bnf.ttl> ;
   void:dataDump <https://raw.githubusercontent.com/hibernator11/dcat-catalog/main/datasets/bnl.ttl> ;
   void:dataDump <https://raw.githubusercontent.com/hibernator11/dcat-catalog/main/datasets/data-foundry-nls.ttl> ;
