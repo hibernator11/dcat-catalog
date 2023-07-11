@@ -27,9 +27,9 @@ Note that only a small portion of datasets per institution has been selected.
   
 ## Exploring the collection of datasets using Jupyter Notebooks
 
-An reproducible example based on the use of Jupyter Notebooks is provided in order to show how the data can be queried using [SPARQL](https://www.w3.org/TR/sparql11-query/) as main vocabulary.
+An reproducible example based on the use of [Jupyter Notebooks](https://jupyter.org/) is provided in order to show how the data can be queried using [SPARQL](https://www.w3.org/TR/sparql11-query/) as main vocabulary.
 
-- [dcat-SPARQL](https://nbviewer.org/github/hibernator11/dcat-catalog/blob/main/notebooks/dcat-SPARQL.ipynb)
+- [dcat-SPARQL Jupyter Notebook](https://nbviewer.org/github/hibernator11/dcat-catalog/blob/main/notebooks/dcat-SPARQL.ipynb)
 
 ## Visualisations
 
