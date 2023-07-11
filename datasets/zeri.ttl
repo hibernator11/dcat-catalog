@@ -57,5 +57,5 @@
   foaf:givenName "Zeri Photo Archive"^^xsd:string;
   foaf:mbox <mailto:fondazionezeri.direzione@unibo.it> ;
   rdfs:label "Zeri Photo Archive"@es ;
-  owl:sameAs <https://www.wikidata.org/wiki/Q108481932> 
+  owl:sameAs <https://www.wikidata.org/wiki/Q23687322> 
   .
