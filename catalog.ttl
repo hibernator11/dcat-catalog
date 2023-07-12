@@ -57,9 +57,9 @@
   void:vocabulary <http://rdaregistry.info/Elements/u/> ;
   void:vocabulary <https://vocabs.dariah.eu/tadirah/> ;
   void:vocabulary <http://www.w3.org/2004/02/skos/core#> ;
-  void:triples 620 ; 
+  void:triples 932 ; 
   void:classes 13 ;
-  void:properties 52
+  void:properties 57
   .
 
 :office
