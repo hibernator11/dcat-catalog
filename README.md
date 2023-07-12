@@ -10,7 +10,7 @@ This list intends to be a representative sample providing a wide diversity of co
 
 This is the list of examples provided by GLAM institutions that haven been transformed into the [Data Catalog Vocabulary](https://www.w3.org/TR/vocab-dcat-3/). The information to describe the datasets has been retrieved from websites, research articles and projects. In some cases, the DCAT model has been used only too some extent due to the lack of information provided by the institutions regarding the datasets. 
 
-- [British Library - Free dataset downloads](datasets/bl.ttl)
+- [British Library - Free dataset downloads (Alexander the Great and Shakespeare)](datasets/bl.ttl)
 - [Digital Library of the Caribbean - Panama American - Aruba Esso News](datasets/caribbean.ttl)
 - [Europeana - Downloads](datasets/europeana.ttl)
 - [Harvard Art Museums API](datasets/harvard.ttl)
