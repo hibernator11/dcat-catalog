@@ -6,7 +6,7 @@ This project introduces examples of GLAM datasets provided by institutions descr
 
 This list intends to be a representative sample providing a wide diversity of collections with different content, license and origins in order to encourage institutions to adopt semantic and interoperable standards to describe their datasets to be prepared for the new technological context in which [data spaces will play a relevant role](https://doi.org/10.1007/978-3-031-21756-2_41).
 
-## Framework to transform the datasets
+## Framework to transform the GLAM datasets
 This work proposes a framework that works in three steps (selection, compilation and description) in order to describe the datasets using the DCAT vocabulary. 
 
 <img src="images/fwk-dcat.png" width="60%">
@@ -18,7 +18,7 @@ Additional properties have been used from other vocabularies such as [RDAU](http
 
 <img src="images/dcat-modelling.png" width="70%">
 
-## Collection of datasets: Applying the framework
+## Applying the framework: selection of datasets
 
 This is the list of examples provided by GLAM institutions that haven been transformed into the [Data Catalog Vocabulary](https://www.w3.org/TR/vocab-dcat-3/). The information to describe the datasets has been retrieved from websites, research articles and projects. In some cases, the DCAT model has been used only too some extent due to the lack of information provided by the institutions regarding the datasets. 
 
