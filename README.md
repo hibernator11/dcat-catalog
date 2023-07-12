@@ -1,4 +1,4 @@
-# dcat-catalog
+# DCAT-catalog
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/hibernator11/dcat-catalog/HEAD)
 
@@ -24,7 +24,7 @@ This is the list of examples provided by GLAM institutions that haven been trans
 - [South Australian Museum - Minerals Collection](datasets/sam.ttl)
 - [Zeri Photo Archive](datasets/zeri.ttl)
 
-Note that only a small portion of datasets per institution has been selected. 
+Note that only a small portion of datasets per institution has been selected and transformed to DCAT. 
   
 ## Exploring the collection of datasets using Jupyter Notebooks
 
