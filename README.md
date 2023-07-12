@@ -27,7 +27,7 @@ This is the list of examples provided by GLAM institutions that haven been trans
 Note that only a small portion of datasets per institution has been selected and transformed to DCAT in order to show how to describe the datasets using semantic vocabularies.
 
 ## Framework to transform the datasets
-This work proposes a framework that works in three steps in order to describe the datasets using the DCAT vocabulary. 
+This work proposes a framework that works in three steps (selection, compilation and description) in order to describe the datasets using the DCAT vocabulary. 
 
 <img src="images/fwk-dcat.png" width="60%">
 
