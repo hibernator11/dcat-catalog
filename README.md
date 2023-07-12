@@ -27,8 +27,9 @@ This is the list of examples provided by GLAM institutions that haven been trans
 Note that only a small portion of datasets per institution has been selected and transformed to DCAT.
 
 ## Data modelling
+The description of the datasets has been performed based on the vocabulary DCAT. Additional vocabularies have been used such as [PROV-O](https://www.w3.org/TR/prov-o/), [SKOS](https://www.w3.org/TR/skos-reference/) and [DCterms](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/). 
 
-<img src="images/dcat-modelling">
+<img src="images/dcat-modelling.png">
   
 ## Exploring the collection of datasets using Jupyter Notebooks
 
