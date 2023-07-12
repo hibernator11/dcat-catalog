@@ -22,7 +22,7 @@ This is the list of examples provided by GLAM institutions that haven been trans
 - [National Library of the Netherlands - Dutch Novels 1800-2000](datasets/kb.ttl)
 - [Rijksmuseum - Actors - Thesauri](datasets/rijksmuseum.ttl)
 - [South Australian Museum - Minerals Collection](datasets/sam.ttl)
-- [Zeri Photo Archive](datasets/zeri.ttl)
+- [Zeri Photo Archive - Zeri&LOD](datasets/zeri.ttl)
 
 Note that only a small portion of datasets per institution has been selected and transformed to DCAT.
 
