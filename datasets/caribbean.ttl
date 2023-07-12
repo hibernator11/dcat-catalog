@@ -15,7 +15,7 @@
 
 :dataset-caribbean-panama
   a dcat:Dataset ;
-  dcterms:title ""@en ;
+  dcterms:title "Panama American"@en ;
   dcat:keyword "newspapers"@en, "Metadata"@en ;
   dcterms:issued "2022-04-20"^^xsd:date ;
   dcterms:temporal [ a dcterms:PeriodOfTime ;
@@ -25,10 +25,9 @@
   dcterms:bibliographicReference "Panama Times, Ltd., 2022, 'Panama American', https://doi.org/10.34703/gzx1-9v95/NVVOYK, FIU Research Data Portal, V1";
   dcterms:description "The Panama American is an English language daily newspaper (except for Saturday and Sunday) that is also known as the Weekend American. This collection includes issues from 1950-1959."@en ;
   dcterms:publisher :caribbean ;
-  dcat:contactPoint <mailto:> ;
   dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
   dcterms:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
-  dcat:landingPage <> ;
+  dcat:landingPage <https://dataverse.fiu.edu/dataset.xhtml?persistentId=doi:10.34703/gzx1-9v95/NVVOYK> ;
   dcat:hasPart :dataset-caribbean-panama-1955-pdf ;
   dcat:hasPart :dataset-caribbean-panama-1955-text ;
   dcat:hasPart :dataset-caribbean-panama-1956-pdf ;
@@ -97,5 +96,80 @@
   dcat:downloadURL <https://dataverse.fiu.edu/file.xhtml?persistentId=doi:10.34703/gzx1-9v95/NVVOYK/J6FVYE&version=1.0> ;
   dcat:mediaType <http://www.iana.org/assignments/media-types/text> ;
   dcat:byteSize "25900000"^^xsd:nonNegativeInteger ;
+  dcat:compressFormat <http://www.iana.org/assignments/media-types/application/zip>  
+  .
+
+
+:dataset-caribbean-aruba
+  a dcat:Dataset ;
+  dcterms:title "Aruba Esso News"@en ;
+  dcat:keyword "digitized newspapers"@en, "extracted text"@en ;
+  dcterms:issued "2021-02-02"^^xsd:date ;
+  dcterms:temporal [ a dcterms:PeriodOfTime ;
+    dcat:startDate "1943-01-08"^^xsd:date ; 
+    dcat:endDate   "1985-01-01"^^xsd:date ;
+  ];
+  dcterms:bibliographicReference "Lago Oil and Transport Company, Ltd, 2021, "Aruba Esso News", https://doi.org/10.34703/gzx1-9v95/XZ3BLR, FIU Research Data Portal, V2 ";
+  dcterms:description "Published biweekly from 1941 to 1985, the Aruba Esso News was created by the Lago Oil & Transport Company Ltd. as a source of local and international news for the communities of company officers and their families living in Aruba. As such, the Aruba Esso News included news ranging from company activities and events, employee promotions and introductions, and payday schedules. Although mainly written in English, the paper included sections and news written in Papiamento as well. This data set includes pdf files of digitized issues and extracted text in .txt. "@en ;
+  dcterms:publisher :caribbean ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+  dcterms:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+  dcat:landingPage <https://dataverse.fiu.edu/dataset.xhtml?persistentId=doi:10.34703/gzx1-9v95/XZ3BLR> ;
+  dcat:hasPart :dataset-caribbean-aruba-1941-pdf ;
+  dcat:hasPart :dataset-caribbean-aruba-1941-text ;
+  dcat:hasPart :dataset-caribbean-aruba-1942-pdf ;
+  dcat:hasPart :dataset-caribbean-aruba-1942-text ;
+  rdfs:seeAlso <https://collectionsasdata.github.io/part2whole/cohortone/> ;
+  rdfs:seeAlso <https://ufdc.ufl.edu/CA03400001/00001> ;
+  prov:wasGeneratedBy :caribbean_aruba_pub_activity ;
+  rdau:P60521 <https://dataverse.fiu.edu/dataset.xhtml?persistentId=doi:10.34703/gzx1-9v95/XZ3BLR> ;
+  wdt:P7014 <https://dataverse.fiu.edu/dataset.xhtml?persistentId=doi:10.34703/gzx1-9v95/XZ3BLR> 
+  .
+
+:caribbean_aruba_pub_activity
+  rdf:type prov:Activity ;
+  dcterms:type tadirah:publishing ;
+  prov:startedAtTime "2021-02-02"^^xsd:date ;
+  prov:used :caribbean ;
+  rdfs:label "Aruba Esso News publication"@en ;
+  prov:generated :dataset-caribbean-aruba-1941-pdf ;
+  prov:generated :dataset-caribbean-aruba-1941-text ;
+  prov:generated :dataset-caribbean-aruba-1942-pdf ;
+  prov:generated :dataset-caribbean-aruba-1942-text ;
+  prov:wasAttributedTo :caribbean ;
+  prov:wasInfluencedBy :collectionsAsData
+  .
+
+
+:dataset-caribbean-aruba-1941-pdf rdf:type dcat:Distribution ;
+  rdfs:label "digitized 1941 issues of Aruba Esso News in PDF format"@en ;
+  dcat:downloadURL <https://dataverse.fiu.edu/file.xhtml?persistentId=doi:10.34703/gzx1-9v95/XZ3BLR/ZCM117&version=2.0> ;
+  dcat:mediaType <http://www.iana.org/assignments/media-types/application/pdf> ;
+  dcat:byteSize "258300000"^^xsd:nonNegativeInteger ;
+  dcat:compressFormat <http://www.iana.org/assignments/media-types/application/zip>  
+  .
+
+:dataset-caribbean-aruba-1941-text rdf:type dcat:Distribution ;
+  rdfs:label "extracted text of 1941 issues of Aruba Esso News"@en ;
+  dcat:downloadURL <https://dataverse.fiu.edu/file.xhtml?persistentId=doi:10.34703/gzx1-9v95/XZ3BLR/QP2PAL&version=2.0> ;
+  dcat:mediaType <http://www.iana.org/assignments/media-types/text> ;
+  dcat:byteSize "416900"^^xsd:nonNegativeInteger ;
+  dcat:compressFormat <http://www.iana.org/assignments/media-types/application/zip>  
+  .
+
+
+:dataset-caribbean-aruba-1942-pdf rdf:type dcat:Distribution ;
+  rdfs:label "digitized 1942 issues of Aruba Esso News in PDF format"@en ;
+  dcat:downloadURL <https://dataverse.fiu.edu/file.xhtml?persistentId=doi:10.34703/gzx1-9v95/XZ3BLR/31EDVW&version=2.0> ;
+  dcat:mediaType <http://www.iana.org/assignments/media-types/application/pdf> ;
+  dcat:byteSize "194700000"^^xsd:nonNegativeInteger ;
+  dcat:compressFormat <http://www.iana.org/assignments/media-types/application/zip>  
+  .
+
+:dataset-caribbean-aruba-1942-text rdf:type dcat:Distribution ;
+  rdfs:label "extracted text of 1942 issues of Aruba Esso News"@en ;
+  dcat:downloadURL <https://dataverse.fiu.edu/file.xhtml?persistentId=doi:10.34703/gzx1-9v95/XZ3BLR/XKTSCS&version=2.0> ;
+  dcat:mediaType <http://www.iana.org/assignments/media-types/text> ;
+  dcat:byteSize "294700"^^xsd:nonNegativeInteger ;
   dcat:compressFormat <http://www.iana.org/assignments/media-types/application/zip>  
   .
