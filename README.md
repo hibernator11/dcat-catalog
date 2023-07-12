@@ -29,6 +29,8 @@ Note that only a small portion of datasets per institution has been selected and
 ## Data modelling
 The description of the datasets has been performed based on the vocabulary DCAT. Additional vocabularies have been used such as [PROV-O](https://www.w3.org/TR/prov-o/), [SKOS](https://www.w3.org/TR/skos-reference/) and [DCterms](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/). 
 
+Additional properties have been used from other vocabularies such as [RDAU](http://www.rdaregistry.info/Elements/u/) to describe the examples of use and prototypes as well as the inclusion of terms of use.
+
 <img src="images/dcat-modelling.png" width="70%">
   
 ## Exploring the collection of datasets using Jupyter Notebooks
