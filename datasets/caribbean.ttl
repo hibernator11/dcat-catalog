@@ -22,7 +22,7 @@
     dcat:startDate "1950-01-01"^^xsd:date ; 
     dcat:endDate   "1959-01-01"^^xsd:date ;
   ];
-  dcterms:bibliographicReference "Panama Times, Ltd., 2022, 'Panama American', https://doi.org/10.34703/gzx1-9v95/NVVOYK, FIU Research Data Portal, V1";
+  dcterms:bibliographicReference "Panama Times, Ltd., 2022, 'Panama American', https://doi.org/10.34703/gzx1-9v95/NVVOYK, FIU Research Data Portal, V1" ;
   dcterms:description "The Panama American is an English language daily newspaper (except for Saturday and Sunday) that is also known as the Weekend American. This collection includes issues from 1950-1959."@en ;
   dcterms:publisher :caribbean ;
   dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
@@ -55,7 +55,7 @@
 :collectionsAsData a prov:Activity ;
   foaf:homepage <https://collectionsasdata.github.io/part2whole/cohortone/> ;
   rdfs:label "Collections as Data: Part to Whole"@en ;
-  dcterms:description "dLOC as Data is supported by Collections as Data: Part to Whole, an initiative funded by the Andrew W. Mellon Foundation"@en.
+  dcterms:description "dLOC as Data is supported by Collections as Data: Part to Whole, an initiative funded by the Andrew W. Mellon Foundation"@en
   .
 
 :caribbean
@@ -99,7 +99,6 @@
   dcat:compressFormat <http://www.iana.org/assignments/media-types/application/zip>  
   .
 
-
 :dataset-caribbean-aruba
   a dcat:Dataset ;
   dcterms:title "Aruba Esso News"@en ;
@@ -109,7 +108,7 @@
     dcat:startDate "1943-01-08"^^xsd:date ; 
     dcat:endDate   "1985-01-01"^^xsd:date ;
   ];
-  dcterms:bibliographicReference "Lago Oil and Transport Company, Ltd, 2021, "Aruba Esso News", https://doi.org/10.34703/gzx1-9v95/XZ3BLR, FIU Research Data Portal, V2 ";
+  dcterms:bibliographicReference "Lago Oil and Transport Company, Ltd, 2021, Aruba Esso News, https://doi.org/10.34703/gzx1-9v95/XZ3BLR, FIU Research Data Portal, V2 ";
   dcterms:description "Published biweekly from 1941 to 1985, the Aruba Esso News was created by the Lago Oil & Transport Company Ltd. as a source of local and international news for the communities of company officers and their families living in Aruba. As such, the Aruba Esso News included news ranging from company activities and events, employee promotions and introductions, and payday schedules. Although mainly written in English, the paper included sections and news written in Papiamento as well. This data set includes pdf files of digitized issues and extracted text in .txt. "@en ;
   dcterms:publisher :caribbean ;
   dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
@@ -140,7 +139,6 @@
   prov:wasInfluencedBy :collectionsAsData
   .
 
-
 :dataset-caribbean-aruba-1941-pdf rdf:type dcat:Distribution ;
   rdfs:label "digitized 1941 issues of Aruba Esso News in PDF format"@en ;
   dcat:downloadURL <https://dataverse.fiu.edu/file.xhtml?persistentId=doi:10.34703/gzx1-9v95/XZ3BLR/ZCM117&version=2.0> ;
@@ -156,7 +154,6 @@
   dcat:byteSize "416900"^^xsd:nonNegativeInteger ;
   dcat:compressFormat <http://www.iana.org/assignments/media-types/application/zip>  
   .
-
 
 :dataset-caribbean-aruba-1942-pdf rdf:type dcat:Distribution ;
   rdfs:label "digitized 1942 issues of Aruba Esso News in PDF format"@en ;
