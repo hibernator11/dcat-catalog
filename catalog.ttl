@@ -34,6 +34,7 @@
   void:dataDump <https://raw.githubusercontent.com/hibernator11/dcat-catalog/main/datasets/bl.ttl> ;
   void:dataDump <https://raw.githubusercontent.com/hibernator11/dcat-catalog/main/datasets/bnf.ttl> ;
   void:dataDump <https://raw.githubusercontent.com/hibernator11/dcat-catalog/main/datasets/bnl.ttl> ;
+  void:dataDump <https://raw.githubusercontent.com/hibernator11/dcat-catalog/main/datasets/caribbean.ttl> ;
   void:dataDump <https://raw.githubusercontent.com/hibernator11/dcat-catalog/main/datasets/data-foundry-nls.ttl> ;
   void:dataDump <https://raw.githubusercontent.com/hibernator11/dcat-catalog/main/datasets/europeana.ttl> ;
   void:dataDump <https://raw.githubusercontent.com/hibernator11/dcat-catalog/main/datasets/harvard.ttl> ;
@@ -41,6 +42,7 @@
   void:dataDump <https://raw.githubusercontent.com/hibernator11/dcat-catalog/main/datasets/lc.ttl> ;
   void:dataDump <https://raw.githubusercontent.com/hibernator11/dcat-catalog/main/datasets/moma.ttl> ;
   void:dataDump <https://raw.githubusercontent.com/hibernator11/dcat-catalog/main/datasets/rijksmuseum.ttl> ;
+  void:dataDump <https://raw.githubusercontent.com/hibernator11/dcat-catalog/main/datasets/sam.ttl> ;
   void:dataDump <https://raw.githubusercontent.com/hibernator11/dcat-catalog/main/datasets/zeri.ttl> ;
   void:vocabulary <http://www.w3.org/ns/dcat#> ;
   void:vocabulary <http://purl.org/dc/terms/> ;
