@@ -12,7 +12,7 @@ This is the list of examples provided by GLAM institutions that haven been trans
 
 - [British Library - Free dataset downloads (Alexander the Great and Shakespeare)](datasets/bl.ttl)
 - [Digital Library of the Caribbean - Panama American - Aruba Esso News](datasets/caribbean.ttl)
-- [Europeana - Downloads](datasets/europeana.ttl)
+- [Europeana - Downloads (Theater Posters and National Heritage Institute Bucharest)](datasets/europeana.ttl)
 - [Harvard Art Museums API](datasets/harvard.ttl)
 - [Library of Congress - Chronicling America](datasets/lc.ttl)
 - [Metropolitan Museum of Art - Collection API](datasets/moma.ttl)
