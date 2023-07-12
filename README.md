@@ -24,7 +24,11 @@ This is the list of examples provided by GLAM institutions that haven been trans
 - [South Australian Museum - Minerals Collection](datasets/sam.ttl)
 - [Zeri Photo Archive](datasets/zeri.ttl)
 
-Note that only a small portion of datasets per institution has been selected and transformed to DCAT. 
+Note that only a small portion of datasets per institution has been selected and transformed to DCAT.
+
+## Data modelling
+
+<img src="images/dcat-modelling">
   
 ## Exploring the collection of datasets using Jupyter Notebooks
 
