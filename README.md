@@ -29,7 +29,7 @@ Note that only a small portion of datasets per institution has been selected and
 ## Framework to transform the datasets
 This work proposes a framework that works in three steps in order to describe the datasets using the DCAT vocabulary. 
 
-<img src="images/dcat-fwk.png" width="60%">
+<img src="images/fwk-dcat.png" width="60%">
 
 ## Data modelling
 The description of the datasets has been performed based on the vocabulary DCAT. Additional vocabularies have been used such as [PROV-O](https://www.w3.org/TR/prov-o/), [SKOS](https://www.w3.org/TR/skos-reference/) and [DCterms](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/). 
