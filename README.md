@@ -52,6 +52,7 @@ These are potential ideas to improve this work:
 - Increase the number of datasets per institutions
 - Include additional GLAM institutions
 - Describe with additional details (data quality, provenance, etc.)
+- Improve the metadata related to data quality 
 
 ## References
 
