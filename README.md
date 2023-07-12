@@ -6,7 +6,19 @@ This project introduces examples of GLAM datasets provided by institutions descr
 
 This list intends to be a representative sample providing a wide diversity of collections with different content, license and origins in order to encourage institutions to adopt semantic and interoperable standards to describe their datasets to be prepared for the new technological context in which [data spaces will play a relevant role](https://doi.org/10.1007/978-3-031-21756-2_41).
 
-## Collection of datasets
+## Framework to transform the datasets
+This work proposes a framework that works in three steps (selection, compilation and description) in order to describe the datasets using the DCAT vocabulary. 
+
+<img src="images/fwk-dcat.png" width="60%">
+
+## Data modelling
+The description of the datasets has been performed based on the vocabulary DCAT. Additional vocabularies have been used such as [PROV-O](https://www.w3.org/TR/prov-o/), [SKOS](https://www.w3.org/TR/skos-reference/) and [DCterms](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/). 
+
+Additional properties have been used from other vocabularies such as [RDAU](http://www.rdaregistry.info/Elements/u/) to describe the examples of use and prototypes as well as the inclusion of terms of use.
+
+<img src="images/dcat-modelling.png" width="70%">
+
+## Collection of datasets: Applying the framework
 
 This is the list of examples provided by GLAM institutions that haven been transformed into the [Data Catalog Vocabulary](https://www.w3.org/TR/vocab-dcat-3/). The information to describe the datasets has been retrieved from websites, research articles and projects. In some cases, the DCAT model has been used only too some extent due to the lack of information provided by the institutions regarding the datasets. 
 
@@ -26,17 +38,6 @@ This is the list of examples provided by GLAM institutions that haven been trans
 
 Note that only a small portion of datasets per institution has been selected and transformed to DCAT in order to show how to describe the datasets using semantic vocabularies.
 
-## Framework to transform the datasets
-This work proposes a framework that works in three steps (selection, compilation and description) in order to describe the datasets using the DCAT vocabulary. 
-
-<img src="images/fwk-dcat.png" width="60%">
-
-## Data modelling
-The description of the datasets has been performed based on the vocabulary DCAT. Additional vocabularies have been used such as [PROV-O](https://www.w3.org/TR/prov-o/), [SKOS](https://www.w3.org/TR/skos-reference/) and [DCterms](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/). 
-
-Additional properties have been used from other vocabularies such as [RDAU](http://www.rdaregistry.info/Elements/u/) to describe the examples of use and prototypes as well as the inclusion of terms of use.
-
-<img src="images/dcat-modelling.png" width="70%">
   
 ## Exploring the collection of datasets using Jupyter Notebooks
 
