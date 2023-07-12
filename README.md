@@ -20,7 +20,7 @@ Additional properties have been used from other vocabularies such as [RDAU](http
 
 ## Applying the framework: selection of datasets
 
-This is the list of examples provided by GLAM institutions that haven been transformed into the [Data Catalog Vocabulary](https://www.w3.org/TR/vocab-dcat-3/). The information to describe the datasets has been retrieved from websites, research articles and projects. In some cases, the DCAT model has been used only too some extent due to the lack of information provided by the institutions regarding the datasets. 
+This is the list of examples provided by GLAM institutions that haven been transformed into the [Data Catalog Vocabulary](https://www.w3.org/TR/vocab-dcat-3/). The information to describe the datasets has been retrieved from websites, research articles and projects. In some cases, the DCAT model has been used only too some extent due to the lack of information provided by the institutions regarding the datasets. The entire collection of datasets is available in [this file](catalog.ttl).
 
 - [British Library - Free dataset downloads (Alexander the Great and Shakespeare)](datasets/bl.ttl)
 - [Digital Library of the Caribbean - Panama American - Aruba Esso News](datasets/caribbean.ttl)
@@ -36,7 +36,7 @@ This is the list of examples provided by GLAM institutions that haven been trans
 - [South Australian Museum - Minerals Collection](datasets/sam.ttl)
 - [Zeri Photo Archive - Zeri&LOD](datasets/zeri.ttl)
 
-Note that only a small portion of datasets per institution has been selected and transformed to DCAT in order to show how to describe the datasets using semantic vocabularies. The entire collection of datasets is available in [this file](catalog.ttl).
+Note that only a small portion of datasets per institution has been selected and transformed to DCAT in order to show how to describe the datasets using semantic vocabularies. 
 
   
 ## Exploring the collection of datasets using Jupyter Notebooks
