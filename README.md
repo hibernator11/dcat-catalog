@@ -38,7 +38,20 @@ This is the list of examples provided by GLAM institutions that haven been trans
 
 Note that only a small portion of datasets per institution has been selected and transformed to DCAT in order to show how to describe the datasets using semantic vocabularies. 
 
-  
+## Data assessment
+
+The RDF descriptions have been assessed by means of Shape Expressions (ShEx) that enable the definition of node constraints to be tested against an RDF dataset. An example of ShEx is provided [automatically generated](shex/shex-creation.py) based on the DCAT description of the Moving Image Archive dataset made available by the National Library of Scotland.
+
+```
+weso-s:Distribution
+{
+   rdf:type  [dcat:Distribution]  ;                            # 100.0 %
+   dcat:downloadURL  IRI  ;                                    # 100.0 %
+   dcat:byteSize  xsd:nonNegativeInteger  ;                    # 100.0 %
+   dcat:mediaType  IRI  ;                                      # 100.0 %
+   dcat:compressFormat  IRI                                    # 100.0 %
+}
+```  
 ## Exploring the collection of datasets using Jupyter Notebooks
 
 An reproducible example based on the use of [Jupyter Notebooks](https://jupyter.org/) is provided in order to show how the data can be queried using [SPARQL](https://www.w3.org/TR/sparql11-query/) as main vocabulary.
