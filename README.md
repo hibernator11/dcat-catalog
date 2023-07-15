@@ -43,7 +43,7 @@ Note that only a small portion of datasets per institution has been selected and
 The RDF descriptions have been assessed by means of Shape Expressions (ShEx) that enable the definition of node constraints to be tested against an RDF dataset. An example of ShEx is provided [automatically generated](shex/shex-creation.py) based on the DCAT description of the Moving Image Archive dataset made available by the National Library of Scotland.
 
 ```
-weso-s:Distribution
+shex:Distribution
 {
    rdf:type  [dcat:Distribution]  ;                            # 100.0 %
    dcat:downloadURL  IRI  ;                                    # 100.0 %
