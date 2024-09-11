@@ -61,7 +61,7 @@
 :caribbean
   a foaf:Organization ;
   a prov:Agent, prov:Organization ;
-  foaf:homePage <https://www.bl.uk/> ;
+  foaf:homePage <https://dloc.com/> ;
   foaf:givenName "Digital Library of the Caribbean"^^xsd:string;
   rdfs:label "Digital Library of the Caribbean"@en ;
   owl:sameAs wd:Q5275909
